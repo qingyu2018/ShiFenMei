@@ -1,0 +1,186 @@
+$(function () {
+    var tabs = $('.treasure-items .items-list');
+    var itemMedia = tabs.find('.item-media');
+    var width = 0;
+    $.each(itemMedia, function (i, item) {
+
+        width += $(item).innerWidth();
+    })
+    tabs.width(width);
+
+    var iscroll = new IScroll('.items-wrap', {
+        scrollX: true,
+        scrollY: false
+    });
+
+    // 积分兑换自动高度
+
+
+
+    window.onresize = function () {
+        $imgH = $('.sfm-integral img').height();
+        $itemMsg = $('.sfm-integral .item-msg');
+        $itemMsg.height($imgH);
+    }
+    window.onload = function () {
+        $imgH = $('.sfm-integral img').height();
+        $itemMsg = $('.sfm-integral .item-msg');
+        $itemMsg.height($imgH);
+    }
+
+
+    //践行者语录自动高度绿色框
+    window.onresize = function () {
+        $quotationsImgH = $('.quotations-bot img').height();
+        $quotations = $('.quotations-shares');
+
+        $quotations.height($quotationsImgH - 40);
+        console.log($quotations.height())
+    }
+    window.onload = function () {
+        $quotationsImgH = $('.quotations-bot img').height();
+        $quotations = $('.quotations-shares');
+        $quotations.height($quotationsImgH - 40);
+    }
+    //践行者右盒子自动高度
+    window.onresize = function () {
+        $imgBox = $('.img-box').height();
+        console.log($imgBox)
+        $quotationsT = $('.quotations-top');
+        $quotationsT.height($imgBox - 20);
+        if (window.innerWidth < '768px') {
+            $quotationsT.height = "300px";
+            console.log(111)
+        }
+    }
+    window.onload = function () {
+        $imgBox = $('.img-box').height();
+        $quotationsT = $('.quotations-top');
+        $quotationsT.height($imgBox - 20);
+        if (window.innerWidth < '768px') {
+            $quotationsT.height = "300px";
+        }
+    }
+
+
+    if (window.innerWidth < 768) {
+
+        $('.sfm-activity .activity-content').css('padding', '0');
+        $('.sfm-activity .sfm-btn a').css({
+            "float": "none",
+
+            "margin-right": 0
+        })
+        $('.sfm-activity .activity, .sfm-activity .work').css('padding', 0);
+
+    }
+
+    // ===
+    // === === === === == 动画
+    /*  var isOpen = false; //菜单打开的状态
+      var openTaskId = null; //关闭菜单的任务
+      $('.sfm-topbar li.help,div.help-menu').hover(
+          function () {
+              //鼠标进入
+              if (openTaskId) {
+                  //如果有关闭菜单的任务则清除任务
+                  clearTimeout(openTaskId);
+              }
+              //如果菜单是打开状态则返回
+              if (isOpen) return;
+              //打开菜单
+              isOpen = true;
+              $('.help-menu').stop().animate({
+                  "height": 60,
+              });
+          },
+          function () {
+              //鼠标离开后100毫秒关闭菜单
+              openTaskId = setTimeout(function () {
+                  $('div.help-menu').stop().animate({
+                      "height": 0
+                  });
+                  isOpen = false;
+              }, 100);
+
+          }
+      )*/
+
+
+
+    //================二级菜单展示================
+    $('.sfm-topbar li').hover(function () {
+            var bindMenu = $(this).data('bind-menu');
+            if (!bindMenu) return;
+            $(bindMenu).trigger('mouseover');
+        },
+        function () {
+            var bindMenu = $(this).data('bind-menu');
+            if (!bindMenu) return;
+            $(bindMenu).trigger('mouseout');
+        });
+
+    $('.sub-menu').on('mouseover', function () {
+        //鼠标进入
+        var $this = $(this);
+        var openTaskId;
+        if (openTaskId = $this.data('openTaskId')) {
+            //如果有关闭菜单的任务则清除任务
+            clearTimeout(openTaskId);
+            $this.data('openTaskId', null);
+        }
+        //如果菜单是打开状态则返回
+        if ($this.data('isOpen')) return;
+        //打开菜单
+        $this.data('isOpen', true);
+        $this.stop().animate({
+            "height": 60,
+        });
+    }).on('mouseout', function () {
+        var $this = $(this);
+        //鼠标离开后100毫秒关闭菜单
+        var openTaskId = setTimeout(function () {
+            $this.stop().animate({
+                "height": 0
+            });
+            $this.data('isOpen', false);
+        }, 100);
+        $this.data('openTaskId', openTaskId);
+    });
+
+
+    // 活动详情图片淡入
+    $('div.content-info img').hover(function () {
+        $(this).addClass('fadeIn');
+    }, function () {
+        $(this).removeClass('fadeIn');
+    });
+
+    //获取所有滚动触发的元素
+    var $scrollResponeEls = $('.scroll-respone');
+    $(window).on('scroll', function () {
+        var windwoScrollY = window.scrollY;
+        //console.log('windowScrollY:' + windwoScrollY);
+        $scrollResponeEls.each(function () {
+            var $this = $(this);
+            var waitActive = $this.hasClass('scroll-respone');
+            console.log(waitActive);
+            if (!waitActive) return;
+            // console.log('text:' + $this.text());
+            //判断元素位置
+            // console.log('scrollTop:' + $this.scrollTop());
+            var offseTop = $this.position().top;
+            // console.log('offstTop:' + offseTop);
+            if (Math.abs(windwoScrollY - offseTop) < 100) {
+                //console.log('--------------------');
+                //触发动画
+                $this.addClass($this.data('scroll-animate'))
+                    //移除等待触发动画的标记
+                    .removeClass('scroll-respone');
+                //更新等待的元素
+                $scrollResponeEls = $('.scroll-respone');
+            }
+        });
+    });
+
+});
