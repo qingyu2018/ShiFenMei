@@ -1,0 +1,383 @@
+.main-right .dt {
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-right .items {
+    height: 74px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+}
+
+.main-right .items>div {
+    float: left;
+}
+
+.main-right .items .check-box {
+    width: 15%;
+    padding-left: 1%;
+}
+
+.main-right .items .product-info {
+    width: 40%;
+}
+
+.main-right .items .price,
+.main-right .items .num,
+.main-right .items .total,
+.main-right .items .todo {
+    width: 10%;
+    margin-left: 1%;
+}
+
+.main-right .items .todo {
+    width: 15%;
+}
+
+.main-right .items .num {
+    width: 6%;
+}
+
+.main-right .items-1 {
+    height: 34px;
+    line-height: 34px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0 2%;
+}
+
+.main-right .items-2 {
+    height: 34px;
+    line-height: 34px;
+    border: none;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.main-right .items-2 input {
+    margin-top: -3px;
+}
+
+.check-box span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.main-right .items .img-box {
+    margin-top: 12px;
+    width: 50px;
+    display: inline-block;
+}
+
+.main-right .items .img-box img {
+    width: 100%;
+}
+
+.main-right .product-info p {
+    margin: 0;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden; */
+}
+
+.main-right .items p:first-child {
+    margin-top: 16px;
+}
+
+.main-right .price-content {
+    display: inline-block;
+    border: 1px solid #000;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 22px;
+    width: 100%;
+}
+
+.main-right .num-content {
+    height: 40px;
+    margin-top: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-right .num span.num-top,
+.main-right .num span.num-bottom {
+    display: block;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    background-color: #aaa;
+}
+
+.main-right .num-content .amount {
+    display: inline-block;
+    width: 100%;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+.main-right .total-content {
+    text-align: center;
+    color: #C5281F;
+    margin-top: 26px;
+}
+
+.main-right .favorite {
+    margin-top: 20px;
+}
+
+.main-right .items-3 {
+    margin-top: 30px;
+}
+
+.main-right .items-3:nth-child(3) {
+    margin-top: 0;
+}
+
+.settlement {
+    height: 40px;
+    line-height: 40px;
+    background-color: #565959;
+    padding-left: 1%;
+    color: #fff;
+}
+
+.settlement-left {
+    float: left;
+    width: 40%;
+}
+
+.settlement-right {
+    float: right;
+    width: 60%;
+}
+
+.settlement-left>div,
+.settlement-right>div {
+    float: left;
+    width: 22%;
+}
+
+.settlement-left .move-to-favorite {
+    width: 34%;
+}
+
+.settlement a {
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.settlement a:hover {
+    text-decoration: none;
+}
+
+.settlement .check-box input {
+    margin: 0;
+    margin-right: 1%;
+}
+
+.settlement .choose {
+    width: 28%;
+    margin-left: 10%;
+}
+
+.settlement .express {
+    width: 50%;
+}
+
+.settlement .express span {
+    color: #C5281F;
+}
+
+.settlement .acount {
+    width: 12%;
+    background-color: #D5D5D5;
+    text-align: center;
+    float: right;
+}
+
+.settlement .acount a {
+    color: #565959;
+}
+
+@media(min-width: 768px) and (max-width:991px) {
+    .main-right .items-3 {
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+    }
+    .main-right .items-3 p:first-child {
+        margin: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .main-right .items {
+        height: 140px;
+        background-color: #F9F9FA;
+        border: none;
+        position: relative;
+        margin-top: 5%;
+    }
+    .main-right .items-3:nth-child(3) {
+        margin-top: 5%;
+    }
+    .main-right .items .img-box {
+        width: 80px;
+        height: 80px;
+        margin-top: 15%;
+    }
+    .main-right .items .check-box {
+        width: 20%;
+        padding-left: 1%;
+    }
+    input[type=checkbox] {
+        margin-top: 0;
+    }
+    .product-color {
+        color: #565959;
+    }
+    .price-color {
+        color: #C5281F;
+    }
+    .main-right .items .product-info {
+        width: 60%;
+    }
+    .mobile-num {
+        width: 64px;
+        height: 22px;
+        border: 1px solid #ccc;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+    .mobile-num span {
+        display: inline-block;
+        text-align: center;
+    }
+    .mobile-num .minus,
+    .mobile-num .plus {
+        width: 15px;
+        height: 21px;
+        border-right: 1px solid #ccc;
+    }
+    .mobile-num .plus {
+        border: none;
+        border-left: 1px solid #ccc;
+    }
+    .mobile-num .small-num {
+        width: 24px;
+    }
+    .settlement .check-box input {
+        margin-right: 25%;
+    }
+    .settlement {
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        padding-left: 1%;
+        color: #565959;
+        border: 1px solid #565959;
+    }
+    .settlement .check-box {
+        width: 30%;
+        font-size: 16px;
+    }
+    .settlement-right {
+        float: right;
+        width: 36%;
+    }
+    .settlement .express {
+        width: 60%;
+    }
+    .settlement .acount {
+        width: 40%;
+        height: 48px;
+    }
+    .settlement .acount a {
+        font-size: 24px;
+        border-left: 1px solid #565959;
+    }
+}
+
+@media(max-width:619px) {
+    .main-right .items {
+        height: 110px;
+    }
+    .main-right .items .img-box {
+        width: 60px;
+        height: 60px;
+        margin-top: 15%;
+    }
+    .settlement .check-box {
+        width: 50%;
+    }
+}
+
+@media(max-width:539px) {
+    .settlement {
+        height: 40px;
+        line-height: 40px;
+    }
+    .settlement .acount {
+        height: 38px;
+        width: 30%;
+    }
+    .settlement .acount a {
+        font-size: 16px;
+        height: 38px;
+        line-height: 38px;
+    }
+    .settlement .check-box {
+        font-size: 12px;
+    }
+    .settlement .express {
+        width: 70%;
+    }
+}
+
+@media(max-width:479px) {
+    .main-right .items {
+        height: 80px;
+    }
+    .settlement {
+        height: 40px;
+        line-height: 40px;
+    }
+    .settlement .acount {
+        height: 38px;
+        width: 30%;
+    }
+    .main-right .items .img-box {
+        width: 32px;
+        height: 32px;
+        margin-top: 18%;
+    }
+    .settlement .acount a {
+        font-size: 16px;
+        height: 38px;
+        line-height: 38px;
+    }
+    .settlement .check-box {
+        font-size: 12px;
+    }
+    .settlement .express {
+        width: 70%;
+    }
+    .main-right .items p:first-child {
+        margin-top: 3%;
+    }
+    .settlement-right {
+        float: right;
+        width: 50%;
+    }
+}

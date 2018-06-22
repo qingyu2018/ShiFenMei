@@ -1,0 +1,152 @@
+.center-main {
+    margin-top: 50px;
+}
+
+.avater-wrap {
+    position: relative;
+}
+
+.img-bg img {
+    width: 100%;
+}
+
+.img-box {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.img-avater {
+    padding: 5%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.name {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.acount {
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+}
+
+.nav>div {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.nav .col-xs-3 img {
+    width: 50%;
+}
+
+.nav p {
+    font-size: 22px;
+    color: #585959;
+    margin-top: 10px;
+}
+
+.time-wrap {
+    padding: 10% 0;
+    background-color: #fafaf9;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 60px;
+    color: #575859;
+}
+
+.search {
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.search .btn {
+    padding: 6px 30px;
+    font-size: 25px;
+    height: 100%;
+    background-color: #D5D5D5;
+}
+
+.search .input-group-btn {
+    height: 50px;
+    position: relative;
+}
+
+.search .glyphicon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: 11;
+    font-size: 26px;
+    color: #ccc;
+}
+
+.search input {
+    height: 50px;
+    font-size: 26px;
+    padding-left: 50px;
+}
+
+@media(max-width:539px) {
+    .name {
+        font-size: 28px;
+    }
+    .acount {
+        font-size: 18px;
+    }
+    .nav p {
+        font-size: 16px;
+    }
+    .time-wrap {
+        font-size: 40px;
+    }
+    .search .btn {
+        font-size: 17px;
+    }
+    .search .glyphicon {
+        top: 15px;
+        left: 10px;
+        z-index: 11;
+        font-size: 18px;
+    }
+    .search input {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+}
+
+@media(max-width:479px) {
+    .name {
+        font-size: 24px;
+    }
+    .acount {
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .nav p {
+        font-size: 12px;
+    }
+}

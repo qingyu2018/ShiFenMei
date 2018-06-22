@@ -1,0 +1,69 @@
+.introduce-banner {
+    height: 724px;
+    background: url(../images/sfm-introduce-banner.png) no-repeat center center;
+}
+
+.introduce-title .title {
+    font-size: 54px;
+    color: #030000;
+    width: 300px;
+    margin-left: -150px;
+    line-height: 60px;
+    top: -31px;
+}
+
+.introduce-title .line {
+    background-color: #565959;
+}
+
+.introduce-main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: 030000;
+    font-size: 22px;
+}
+
+@media(max-width: 767px) {
+    .introduce-banner {
+        height: 282px;
+        background-size: contain;
+        margin-top: 20px;
+    }
+    .common-title .container .title {
+        color: #030000;
+        width: 200px;
+        margin-left: -100px;
+    }
+    .introduce-main {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .items {
+        margin-top: 20px;
+    }
+    .items-2 {
+        margin: 0;
+    }
+}
+
+@media(max-width: 619px) {
+    .introduce-banner {
+        height: 227px;
+    }
+}
+
+@media(max-width:539px) {
+    .introduce-banner {
+        height: 198px;
+    }
+    .common-title .container .title {
+        width: 140px;
+        margin-left: -70px;
+    }
+}
+
+@media(max-width:479px) {
+    .introduce-banner {
+        height: 185px;
+    }
+}

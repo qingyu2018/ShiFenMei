@@ -1,0 +1,125 @@
+/* 微信提现开始 */
+
+.wechat-main {
+    height: 685px;
+    background: url(../images/wechat-cashout-bg.png) no-repeat center center;
+    margin-top: 20px;
+    text-align: center;
+    color: #030000;
+}
+
+.wechat-main .items {
+    margin-top: 60px;
+}
+
+.wechat-main .item-title {
+    font-size: 36px;
+}
+
+.wechat-main .subtitle {
+    font-size: 26px;
+}
+
+.wechat-main .items-2 {
+    margin-top: 30px;
+}
+
+.amount-content {
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(92, 92, 92);
+}
+
+.big-size {
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+.amount-content input {
+    border: none;
+    background-color: transparent;
+    vertical-align: middle;
+    font-size: 50px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.amount-content input::-webkit-input-placeholder {
+    color: #030000;
+}
+
+.wechat-main .items-3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.items-3 .details {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #050000;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.items-4 {
+    border: 1px solid #fff;
+    width: 176px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.items-4 a {
+    display: block;
+    color: #fff;
+    line-height: 50px;
+    font-size: 26px;
+}
+
+.items-4 a:hover {
+    text-decoration: none;
+}
+
+@media(max-width:767px) {
+    .wechat-main {
+        background: none;
+    }
+    .items-1 img {
+        display: inline-block;
+        margin: 0;
+    }
+    .amount-content {
+        text-align: left;
+    }
+    .wechat-main .items-3 {
+        text-align: left;
+    }
+    .amount-content input {
+        width: 60%;
+    }
+    .wechat-main {
+        height: auto;
+    }
+    .items-4 {
+        display: block;
+        background-color: #55B44D;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 10%;
+        height: auto;
+    }
+    .items-4 a {
+        padding: 3% 0;
+        line-height: normal;
+        height: auto;
+    }
+    .green {
+        color: #78A63E;
+    }
+}
+
+@media (max-width: 479px) {
+    .mobile-product .big-size {
+        font-size: 36px;
+    }

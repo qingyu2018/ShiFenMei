@@ -1,0 +1,42 @@
+.main-right .items .todo {
+    width: 10%;
+}
+
+.main-right .items .num {
+    width: 10%;
+}
+
+.main-right .num-content {
+    margin-top: 26px;
+}
+
+.main-right .items p.trade {
+    color: #C5281F;
+    margin-top: 26px;
+}
+
+@media(max-width:767px) {
+    .main-right .items .todo {
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .main-right .items .trade {
+        line-height: normal;
+    }
+    .settlement a {
+        color: #565959;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 539px) {
+    .settlement a {
+        color: #565959;
+        font-size: 12px;
+    }
+    .settlement .check-box {
+        width: 60%;
+    }
+}

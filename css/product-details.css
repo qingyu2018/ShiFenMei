@@ -1,0 +1,157 @@
+.product-main img {
+    width: 100%;
+}
+
+.items {
+    overflow: hidden;
+}
+
+.items-1 p {
+    font-size: 22px;
+    color: #000;
+}
+
+.items-1 p.amount {
+    font-size: 36px;
+}
+
+.items-1>.col-sm-3 {
+    padding: 0;
+}
+
+.num-wrap span {
+    float: left;
+}
+
+.num-wrap .num-title {
+    font-size: 18px;
+}
+
+.num-wrap {
+    overflow: hidden;
+}
+
+.num-wrap .num {
+    width: 78px;
+    height: 22px;
+    border: 1px solid #ddd;
+    background-color: #EDEDED;
+    line-height: 22px;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.num-wrap .num .minus {
+    width: 24px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.num-wrap .num .degital {
+    width: 30px;
+    background-color: #fff;
+}
+
+.num-wrap .num .plus {
+    width: 24px;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.product-btn {
+    margin-top: 20px;
+}
+
+.product-btn a {
+    color: #fff;
+    display: block;
+    background-color: #85C034;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.product-btn a p {
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+}
+
+.product-btn>div {
+    padding-left: 0;
+}
+
+.items-2 .col-sm-8 {
+    margin-top: 50px;
+}
+
+.items-2 .swiper-button-prev,
+.items-2 .swiper-button-next {
+    background: none;
+    font-size: 50px;
+    font-family: "simsun";
+    color: #ddd;
+    font-weight: 700;
+    margin-top: -36px;
+}
+
+.items-2 .swiper-button-prev {
+    margin-left: -50px;
+}
+
+.items-2 .swiper-button-next {
+    margin-right: -50px;
+}
+
+.items-3 {
+    margin-top: 30px;
+    background-color: #EDEDED;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 5%;
+    font-size: 20px;
+    color: #4D4D4D;
+}
+
+.items-4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mobile-swiper {
+    margin-top: 30px;
+}
+
+.mobile-swiper .swiper-pagination-bullet-active {
+    background-color: #000;
+}
+
+@media(max-width:767px) {
+    .items-1 .col-xs-12 {
+        margin-top: 30px;
+    }
+    .items-1 p.amount {
+        font-size: 48px;
+    }
+    .product-btn>div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width:619px) {
+    .items-1 p.amount {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:539px) {
+    .items-1 p.amount {
+        font-size: 33px;
+    }
+}
+
+@media(max-width:479px) {
+    .items-1 p.amount {
+        font-size: 30px;
+    }
+}

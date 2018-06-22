@@ -1,0 +1,173 @@
+.contact-banner .contact-swiper-slide {
+    height: 340px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-banner .swiper-pagination {
+    bottom: -5px;
+}
+
+.contact-banner .swiper-slide>img {
+    width: 100%;
+}
+
+.contact-banner .my-bullet {
+    width: 300px;
+    height: 105px;
+    line-height: 105px;
+    opacity: 1;
+    border-radius: 0;
+    background-color: #fff;
+    text-align: left;
+}
+
+.contact-banner .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
+
+.bullet-title {
+    float: left;
+    font-size: 26px;
+    color: #000;
+    display: block;
+    width: 195px;
+    text-align: center;
+}
+
+.contact-banner .my-bullet img {
+    display: block;
+    float: left;
+}
+
+.contact-title .title {
+    font-size: 54px;
+    color: #030000;
+    width: 300px;
+    margin-left: -150px;
+    line-height: 60px;
+    top: -31px;
+}
+
+.contact-title .line {
+    background-color: #565959;
+}
+
+.contact-main {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.contact-main .form-control {
+    border-radius: 0;
+    border-color: #565959;
+}
+
+.contact-main .form-control:focus {
+    border-color: #565959;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.items {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.items input[type=submit] {
+    border-radius: 0;
+    background-color: #848484;
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    .contact-banner .contact-swiper-slide {
+        height: auto;
+        background-size: contain;
+        margin-top: 20px;
+    }
+    .contact-banner .my-bullet {
+        width: 170px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .bullet-title {
+        font-size: 12px;
+        width: 100px;
+    }
+    .contact-banner .my-bullet img {
+        width: 60px;
+    }
+    .common-title .container .title {
+        color: #030000;
+        width: 200px;
+        margin-left: -100px;
+    }
+    .contact-main {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .contact-main .form-control {
+        margin-top: 20px;
+    }
+    .items {
+        margin: 0;
+    }
+    .mobile-product .tips p {
+        font-size: 10px;
+    }
+    .items input[type=submit] {
+        width: 104px;
+        font-size: 20px;
+    }
+    .tips {
+        margin-top: 20px;
+    }
+    .tips p {
+        margin: 0;
+    }
+    .mobile-btn {
+        margin-top: 20px;
+    }
+    .mobile-btn .col-xs-4 {
+        padding: 0;
+    }
+}
+
+@media(max-width:539px) {
+    .contact-banner .my-bullet {
+        width: 140px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .contact-banner .my-bullet img {
+        width: 50px;
+    }
+    .bullet-title {
+        font-size: 12px;
+        width: 70px;
+    }
+    .common-title .container .title {
+        width: 140px;
+        margin-left: -70px;
+    }
+}
+
+@media(max-width:479px) {
+    .contact-banner .my-bullet {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .contact-banner .my-bullet img {
+        width: 40px;
+    }
+    .bullet-title {
+        font-size: 12px;
+        width: 60px;
+    }
+    .common-title .container .title {
+        width: 140px;
+        margin-left: -70px;
+    }
+}

@@ -1,260 +1,3 @@
-.sfm-topbar {
-    height: 46px;
-    line-height: 46px;
-    background-color: #F6F3EE;
-}
-
-.sfm-topbar .login,
-.sfm-topbar .register {
-    display: inline-block;
-    width: 36px;
-    position: relative;
-}
-
-.sfm-topbar .register {
-    text-align: right;
-}
-
-.sfm-topbar a {
-    display: block;
-    font-size: 14px;
-    color: #517E3B;
-}
-
-.sfm-topbar .login span {
-    position: absolute;
-    width: 1px;
-    height: 10px;
-    top: 18px;
-    right: 0;
-    background-color: #517E3B;
-}
-
-.sfm-topbar input {
-    width: 166px;
-    height: 20px;
-    margin-left: 16px;
-    border: none;
-    background: url(../images/searchbox.png) no-repeat center center;
-    padding-left: 10px;
-    padding-right: 30px;
-}
-
-.sfm-topbar ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.sfm-topbar li {
-    position: relative;
-    float: left;
-    padding: 0 6px;
-}
-
-.sfm-topbar .wechat {
-    padding: 0 14px;
-}
-
-.sfm-topbar .mobile {
-    padding-left: 20px;
-    text-align: right;
-}
-
-.sfm-topbar li.line {
-    width: 1px;
-    height: 12px;
-    background-color: #ddd;
-    margin-top: 18px;
-    padding: 0;
-}
-
-.sfm-topbar li a {
-    display: block;
-}
-
-.sfm-topbar li:hover a {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #000
-}
-
-.help-menu {
-    overflow: hidden;
-    background-color: #fff;
-    position: absolute;
-    width: 100%;
-    top: 46px;
-    left: 0;
-    z-index: 1;
-    height: 0;
-    box-shadow: 2px 2px 8px #ccc;
-}
-
-.help-menu li {
-    float: right;
-}
-
-.help-menu li:first-child {
-    margin-right: 4%;
-}
-
-.help-menu li a:hover {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #000;
-}
-
-.classify-knowledge {}
-
-.classify-knowledge li {
-    float: left;
-}
-
-.classify-knowledge li:first-child {
-    margin: 0;
-    margin-left: 20%;
-}
-
-/* ==================================header区域结束 */
-
-/* ===============================导航条 */
-
-.sfm-nav {
-    background-color: #fff;
-    padding: 68px 0 38px 0;
-}
-
-.sfm-nav .navbar-brand {
-    color: #777;
-    margin-top: -30px;
-    padding: 15px 0;
-}
-
-.sfm-nav .navbar-brand:hover,
-.sfm-nav .navbar-brand:focus {
-    color: #5e5e5e;
-    background-color: transparent;
-}
-
-.sfm-nav .navbar-text {
-    color: #777;
-}
-
-.sfm-nav .navbar-nav {
-    width: 100%;
-}
-
-.sfm-nav .navbar-nav>li {
-    width: 18%;
-}
-
-.sfm-nav .navbar-nav>li.logo-li {
-    width: 28%;
-    margin-top: -30px;
-}
-
-.sfm-nav .navbar-nav>li>a {
-    color: #72726F;
-    font-size: 18px;
-    padding: 0;
-    text-align: center;
-}
-
-.sfm-nav .navbar-nav>li>a:hover,
-.sfm-nav .navbar-nav>li>a:focus {
-    color: #333;
-    background-color: transparent;
-}
-
-.sfm-nav .navbar-nav>.active>a,
-.sfm-nav .navbar-nav>.active>a:hover,
-.sfm-nav .navbar-nav>.active>a:focus {
-    color: #000;
-}
-
-.sfm-nav .navbar-nav>.disabled>a,
-.sfm-nav .navbar-nav>.disabled>a:hover,
-.sfm-nav .navbar-nav>.disabled>a:focus {
-    color: #ccc;
-    background-color: transparent;
-}
-
-.sfm-nav .navbar-toggle {
-    border-color: #ddd;
-    border: none;
-}
-
-.sfm-nav .navbar-toggle:hover,
-.sfm-nav .navbar-toggle:focus {
-    background: none;
-}
-
-.sfm-nav .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-
-.sfm-nav .navbar-collapse,
-.sfm-nav .navbar-form {
-    border-color: #e7e7e7;
-}
-
-.sfm-nav .navbar-nav>.open>a,
-.sfm-nav .navbar-nav>.open>a:hover,
-.sfm-nav .navbar-nav>.open>a:focus {
-    color: #555;
-    background-color: #e7e7e7;
-}
-
-@media (max-width: 767px) {
-    .sfm-nav .navbar-nav .open .dropdown-menu>li>a {
-        color: #777;
-    }
-    .sfm-nav .navbar-nav .open .dropdown-menu>li>a:hover,
-    .sfm-nav .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #333;
-        background-color: transparent;
-    }
-    .sfm-nav .navbar-nav .open .dropdown-menu>.active>a,
-    .sfm-nav .navbar-nav .open .dropdown-menu>.active>a:hover,
-    .sfm-nav .navbar-nav .open .dropdown-menu>.active>a:focus {
-        color: #555;
-        background-color: #e7e7e7;
-    }
-    .sfm-nav .navbar-nav .open .dropdown-menu>.disabled>a,
-    .sfm-nav .navbar-nav .open .dropdown-menu>.disabled>a:hover,
-    .sfm-nav .navbar-nav .open .dropdown-menu>.disabled>a:focus {
-        color: #ccc;
-        background-color: transparent;
-    }
-}
-
-.sfm-nav .navbar-link {
-    color: #777;
-}
-
-.sfm-nav .navbar-link:hover {
-    color: #333;
-}
-
-.sfm-nav .btn-link {
-    color: #777;
-}
-
-.sfm-nav .btn-link:hover,
-.sfm-nav .btn-link:focus {
-    color: #333;
-}
-
-.sfm-nav .btn-link[disabled]:hover,
-fieldset[disabled] .sfm-nav .btn-link:hover,
-.sfm-nav .btn-link[disabled]:focus,
-fieldset[disabled] .sfm-nav .btn-link:focus {
-    color: #ccc;
-}
-
-/* ===============================导航条结束 */
-
 /* =============================轮播图 */
 
 .sfm-banner .carousel-indicators {
@@ -372,6 +115,26 @@ fieldset[disabled] .sfm-nav .btn-link:focus {
     margin-top: 60px;
 }
 
+.environment-items .img-box {
+    margin-top: 0;
+    display: inline-block;
+    height: 110px;
+    line-height: 110px;
+    overflow: hidden;
+}
+
+.environment-items .img-box .dynamic {
+    display: none;
+}
+
+.environment-items .img-box:hover .static {
+    display: none;
+}
+
+.environment-items .img-box:hover .dynamic {
+    display: block;
+}
+
 /* ========================环保贡献结束*/
 
 /* =====================变废为宝 */
@@ -416,8 +179,8 @@ fieldset[disabled] .sfm-nav .btn-link:focus {
 .treasure-items-wrap li div.details {
     margin-top: 42px;
     font-size: 15px;
-    height: 60px;
     color: #231815;
+    height: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -518,7 +281,7 @@ div.direction-right {
 
 .sfm-integral .integral-items .description .item-content {
     font-size: 20px;
-    color: #000;
+    color: #666;
     margin: 0;
 }
 
@@ -719,10 +482,10 @@ ul {
     font-size: 14px;
     overflow: hidden;
     color: #808080;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 }
 
 .sfm-activity .activity-content .content-info .direction-right {
@@ -771,7 +534,7 @@ ul {
         padding: 20px 0;
     }
     .sfm-activity .activity-content .content-info .info-title {
-        font-size: 34px;
+        font-size: 22px;
     }
     .sfm-activity .activity-content .content-info .info-detail {
         font-size: 20px;
@@ -816,6 +579,11 @@ ul {
 
 /* ===========================践行者语录 */
 
+/* .swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
+} */
+
 .sfm-quotations .top-box {
     position: relative;
     height: 396px;
@@ -835,8 +603,8 @@ ul {
 }
 
 .sfm-quotations .top-box .quo-box {
-    width: 55%;
-    float: right;
+    width: 100%;
+    margin-top: 18px;
 }
 
 .sfm-quotations .bot-box {
@@ -868,13 +636,14 @@ ul {
 }
 
 .quotations-top {
-    padding: 0 10%;
+    padding: 0 4%;
 }
 
 .quotations-top h2 {
     font-size: 30px;
     font-weight: 700;
     color: #000;
+    margin: 0;
 }
 
 .quotations-box {
@@ -883,38 +652,50 @@ ul {
 
 .quotations-box .quotations-mascot {
     float: left;
-    width: 20%;
-    margin-top: -5%;
-    margin-right: 5%;
+    width: 16%;
 }
 
 .quotations-box .quotations-mascot img {
-    margin-top: 10px;
     width: 100%;
 }
 
 .quotations-box .quotations-info {
-    width: 75%;
     font-size: 12px;
-    margin-left: 5%;
-    height: 160px;
-    overflow: hidden;
+    margin-left: 20%;
 }
 
 .quotations-box .quotations-info p {
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    font-size: 12px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    font-size: 14px;
 }
 
 .quotations-btn {
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    height: 100px;
+}
+
+.quotations-btn .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background: none;
+    width: 30px;
+    height: 30px;
+    top: -63px;
+    right: 3px;
+    left: auto;
+}
+
+.quotations-btn .swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background: none;
+    width: 30px;
+    height: 30px;
+    right: 3px;
+    left: auto;
+    top: -30px;
 }
 
 .quotations-btn p {
@@ -1025,100 +806,10 @@ ul {
     }
 }
 
+/* 轮播 */
+
+.sfm-quotations .swiper-container {
+    height: 400px;
+}
+
 /* ===========================践行者语录结束 */
-
-/* ==========================底部区域 */
-
-footer {
-    height: 270px;
-    line-height: 270px;
-    background-color: #F6F3EE;
-}
-
-footer div.logo {
-    width: 20%;
-    float: left;
-}
-
-footer .footer-list {
-    width: 64%;
-    float: left;
-    text-align: center;
-    margin-right: 6%;
-}
-
-footer .code {
-    width: 10%;
-    float: right;
-    text-align: right;
-}
-
-footer .code img {
-    width: 100%;
-}
-
-footer .logo a {
-    display: block;
-}
-
-footer .logo a img {
-    width: 100%;
-}
-
-.footer-list a {
-    display: inline-block;
-    font-size: 16px;
-    color: #000;
-}
-
-.footer-list a:hover {
-    text-decoration: none;
-}
-
-.footer-list li {
-    display: inline-block;
-}
-
-.footer-list span.line {
-    display: inline-block;
-    width: 1px;
-    height: 14px;
-    background-color: #bbb;
-    padding: 0;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: -2px;
-}
-
-/* ==========================底部区域结束 */
-
-/* =========================768显示的底部 */
-
-.footer {
-    background-color: #F6F3EE;
-    padding-top: 40px;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.footer-code {
-    margin-top: 20px;
-}
-
-.footer-code p {
-    font-size: 14px;
-}
-
-.footer .footer-list {
-    display: inline-block;
-    width: 260px;
-    margin-top: 30px;
-    font-family: "simsun";
-    font-size: 12px;
-}
-
-.footer .footer-list .line {
-    background-color: #bbb;
-}
-
-/* =========================768显示的底部结束 */

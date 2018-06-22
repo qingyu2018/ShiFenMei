@@ -1,0 +1,131 @@
+.main-right {
+    color: #575959;
+}
+
+.main-right .dt {
+    height: 22px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-right .items {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.items-1 {
+    height: 32px;
+    padding-top: 8px;
+}
+
+.items-1 a {
+    font-size: 14px;
+    color: #575959;
+}
+
+.items-1 a:hover {
+    text-decoration: none;
+}
+
+.items-1 .col-sm-2 {
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.items-2 img {
+    width: 64%;
+}
+
+.items .col-xs-10 {
+    padding: 0;
+}
+
+.items-2 .img-box {
+    text-align: center;
+}
+
+.items-2 div {
+    overflow: hidden;
+}
+
+.items-2 .col-sm-10 {
+    padding: 0;
+    overflow: hidden;
+}
+
+.msg-title .name {
+    font-size: 16px;
+}
+
+.items-2 .msg-time img {
+    width: auto;
+}
+
+.response-btn {
+    background-color: #fff;
+    border: none;
+    font-size: 10px;
+    outline: none;
+}
+
+.custom {
+    font-size: 10px;
+}
+
+.send-btn {
+    height: 60px;
+    background-color: #EEEEEF;
+}
+
+.send-btn input {
+    width: 70%;
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 10%;
+}
+
+.send-btn a {
+    font-size: 25px;
+    color: #fff;
+    background-color: #575959;
+    width: 96px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.send-btn a:hover {
+    text-decoration: none;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+@media(max-width:767px) {
+    .msg-title .name {
+        font-size: 18px;
+    }
+    .content {
+        font-size: 14px;
+    }
+    .items .col-xs-2 {
+        padding: 0;
+    }
+}
+
+@media(max-width:539px) {
+    .send-btn {
+        height: 50px;
+    }
+    .send-btn input {
+        width: 60%;
+        margin-top: 8px;
+        margin-left: 6%;
+    }
+    .send-btn a {
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+    }
+}

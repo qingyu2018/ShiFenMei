@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+
+    <title>塑料类</title>
+
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/plastic.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="../lib/bootstrap/html5shiv.min.js"></script>
+        <script src="../lib/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header class="sfm-topbar hidden-sm hidden-xs">
+        <div class="container">
+            <!--未登录时显示，向class中添加hidden可以隐藏-->
+            <div class="pull-left">
+                <div class="login">
+                    <a href="login.html">
+                        登录
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+
+                <input type="text">
+            </div>
+            <!--登录后显示 class中的hidden控制隐藏-->
+            <div class="pull-left hidden">
+                <div class="topbar-personal-center">
+                    <a href="personal-data.html">个人中心
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="#">退出</a>
+                </div>
+
+                <input type="text">
+
+            </div>
+            <div class="pull-right">
+                <ul>
+                    <li class="classify-knowledge parent-menu" data-bind-menu="#classifySubMenu">
+                        <a href="classify.html">分类知识</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="proposal.html">市民倡议书</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">考核入口</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="join-us.html">加入我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="sfm-introduce.html">关于我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="help parent-menu" data-bind-menu="#helpSubMenu">
+                        <a href="help.html">帮助</a>
+
+                    </li>
+                    <div class="sub-menu help-menu" id="helpSubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="service.html">服务范围</a>
+                                </li>
+                                <li>
+                                    <a href="exchange-mode.html">兑换规则</a>
+                                </li>
+                                <li>
+                                    <a href="integral-rule.html">积分规则</a>
+                                </li>
+                                <li>
+                                    <a href="partake.html">如何参与</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-menu sort-menu" id="classifySubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="waste-sorting.html">垃圾四分类</a>
+                                </li>
+                                <li>
+                                    <a href="change-waste.html">变废为宝</a>
+                                </li>
+                                <li>
+                                    <a href="glass.html">玻璃类</a>
+                                </li>
+                                <li>
+                                    <a href="recycle.html">电子可回收物</a>
+                                </li>
+                                <li>
+                                    <a href="metal.html">金属类</a>
+                                </li>
+                                <li>
+                                    <a href="plastic.html">塑料类</a>
+                                </li>
+                                <li>
+                                    <a href="harmful.html">有害垃圾</a>
+                                </li>
+                                <li>
+                                    <a href="paper.html">纸类</a>
+                                </li>
+                                <li>
+                                    <a href="love-donations.html">爱心捐赠</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="line"></li>
+                    <li class="wechat">
+                        <a href="contact-us.html">
+                            <img src="../images/wechat_03.png" alt="">
+                        </a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="mobile">
+                        <a href="#">
+                            <img src="../images/mobile_03.png" alt="">
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <nav class="navbar sfm-nav mobile-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">
+                    <img src="../images/logo_03.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 环保贡献 |
+
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="../index.html">首页
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="parent-menu hidden-xs" data-bind-menu="#news-center">
+                        <a href="news-center.html">
+                            <span>| 新闻中心 |</span>
+                        </a>
+                    </li>
+                    <li class="logo-li hidden-xs">
+                        <a href="../index.html">
+                            <img src="../images/logo_03.png" alt="">
+                        </a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="exchange-mode.html">| 积分兑换 |</a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 践行者语录|</a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="classify.html">分类知识
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="news-center.html">新闻中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="center-index.html">个人中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="sfm-introduce.html">关于我们
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="help.html">帮助
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-menu sub-menu hidden-xs" id="news-center">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="news-center.html">活动详情</a>
+                        </li>
+                        <li>
+                            <a href="news-center.html">工作推进</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航结束 -->
+    <section class="classify-title hidden-xs">
+        <div class="container">
+            <div class="title">
+                <span>
+                    <a href="classify.html" style="color:#666">分类知识</a>
+                </span>
+                <span class="glyphicon glyphicon-menu-right"></span>
+                <span>塑料类</span>
+            </div>
+        </div>
+    </section>
+    <section class="classify-return visible-xs">
+        <div class="container">
+            <div>
+                <a href="">
+                    <img src="../images/classify-return.png" alt="">
+                    <span>返回列表</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="common-title hidden-xs animated scroll-response" data-scroll-animate="fadeIn">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <p class="title">塑料类</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="plastic-product mobile-product">
+        <div class="container">
+            <div class="items items-1">
+                <div class="col-sm-5">
+                    <img src="../images/plastic01.png" alt="">
+                </div>
+                <div class="col-sm-6 col-sm-offset-1 animated scroll-response" data-scroll-animate="fadeIn">
+                    <div class="sprite-img">
+                        <img src="../images/plastic02.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="tj">塑料是以单体为原料，通过加聚或缩聚反应聚合而成的高分子化合 物，俗称塑料(plastics)或树脂(resin)，可以自由改变成分及形体样式 ，由 合成树脂及填料、增塑剂、稳定剂、润滑剂、色料添加剂组成。有些塑料
+                            基本上是由合成树脂所组成，不含或少含添加剂，如有机玻璃、聚苯乙 烯等。
+                        </p>
+                        <p class="tj">所谓塑料，其实它是合成树脂中的一种，形状跟天然树脂中的松树脂 相似，经过化学手段进行人工合成，而被称之为塑料。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="items items-2">
+                <div class="content">
+                    <div class="item-title">塑料类的成分</div>
+                    <p class="text-center hidden-xs">我们通常所用的塑料并不是一种纯物质，它是由许多材料配制而成的。其中高分子聚合物(或称合成树脂)是塑料的主要成分，此外，为了改进塑料的性 能，还要在高分子化合物中添加各种辅助材料，如填料、增塑剂、润滑剂、稳定剂、着色剂、抗静电剂等，才能成为性能良好的塑料。塑料助剂又叫塑
+                        料添加剂，是聚合物（合成树脂）进行成型加工时为改善其加工性能或为改善树脂本身性能所不足而必须添加的一些化合物。例如，为了降低聚氯乙烯 树脂的成型温度，使制品柔软而添加的增塑剂；又如为了制备质量轻、抗振、隔热、隔音的泡沫塑料而要添加发泡剂；有些塑料的热分解温度与成型加工温度非常接近，不加入热稳定剂就无法成型。因而，塑料助剂在塑料成型加工中占有特别重要的地位。
+                    </p>
+                    <p class="tj visible-xs">我们通常所用的塑料并不是一种纯物质，它是由许多材料配制而成的。其中高分子聚合物(或称合成树脂)是塑料的主要成分，此外，为了改进塑料的性 能，还要在高分子化合物中添加各种辅助材料，如填料、增塑剂、润滑剂、稳定剂、着色剂、抗静电剂等，才能成为性能良好的塑料。塑料助剂又叫塑
+                        料添加剂，是聚合物（合成树脂）进行成型加工时为改善其加工性能或为改善树脂本身性能所不足而必须添加的一些化合物。例如，为了降低聚氯乙烯 树脂的成型温度，使制品柔软而添加的增塑剂；又如为了制备质量轻、抗振、隔热、隔音的泡沫塑料而要添加发泡剂；有些塑料的热分解温度与成型加工温度非常接近，不加入热稳定剂就无法成型。因而，塑料助剂在塑料成型加工中占有特别重要的地位。
+                    </p>
+                </div>
+            </div>
+            <div class="items items-3">
+                <div class="col-sm-5">
+                    <img src="../images/plastic03.png" alt="">
+                </div>
+                <div class="col-sm-6 col-sm-offset-1">
+
+                    <div class="content">
+                        <div class="item-title item-subtitle ">
+                            第一类塑料瓶类：
+                        </div>
+                        <p class="animated scroll-response tj" data-scroll-animate="fadeInRight">
+                            包括装饮料、果汁、茶、咖啡、水等的塑料瓶；装酒类的塑料瓶； 装酱油、食用油、洗洁精等塑料瓶。
+                        </p>
+                        <div class=" item-title item-subtitle">
+                            处理方法：
+                        </div>
+                        <p class="animated scroll-response tj" data-scroll-animate="fadeInRight">
+                            倒净瓶内液体、压扁瓶身，装入石分美回收袋内。
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="items items-4 hidden-xs">
+
+                <div class="col-sm-6 ">
+
+                    <div class="content">
+                        <div class="item-subtitle item-title">
+                            第一类塑料瓶类：
+                        </div>
+                        <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft">
+                            包括洗发精瓶、护发液瓶、沐浴乳瓶、塑料盒、塑料杯、塑料瓶、 塑料桌、椅、塑料菜篮子、塑料脸盆、塑料管、塑料水管、塑料生鲜 食品盒、塑料日用品、光碟片、塑料饭盒、塑料托盘、塑料衣架、塑 料置物架、有机玻璃制品等。一次性餐盒、方便面盒不可回收。
+                        </p>
+                        <div class="item-subtitle item-title">
+                            处理方法：
+                        </div>
+                        <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft">
+                            倒净瓶内液体、为减少体积，整理整齐装入石分美回收袋内封好口， 贴上二维码，按照指定时间投入分类回收点。
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1">
+                    <img src="../images/plastic04.png" alt="">
+                </div>
+            </div>
+            <div class="items items-4 visible-xs">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <img src="../images/plastic04.png" alt="">
+                </div>
+                <div class="col-sm-6 ">
+
+                    <div class="content">
+                        <div class="item-subtitle item-title">
+                            第一类塑料瓶类：
+                        </div>
+                        <p class="tj">
+                            包括洗发精瓶、护发液瓶、沐浴乳瓶、塑料盒、塑料杯、塑料瓶、 塑料桌、椅、塑料菜篮子、塑料脸盆、塑料管、塑料水管、塑料生鲜 食品盒、塑料日用品、光碟片、塑料饭盒、塑料托盘、塑料衣架、塑 料置物架、有机玻璃制品等。一次性餐盒、方便面盒不可回收。
+                        </p>
+                        <div class="item-subtitle item-title">
+                            处理方法：
+                        </div>
+                        <p class="tj">
+                            倒净瓶内液体、为减少体积，整理整齐装入石分美回收袋内封好口， 贴上二维码，按照指定时间投入分类回收点。
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- pc端底部 -->
+    <footer class=" hidden-xs ">
+        <div class="container ">
+
+
+            <div class="logo ">
+                <a href=" ">
+                    <img src="../images/logo_03.png " alt=" ">
+                </a>
+            </div>
+            <div class="footer-list ">
+                <ul>
+                    <li>
+                        <a href="# ">环保贡献</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="proposal.html ">市民倡议书</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="exchange-mode.html ">积分兑换</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="join-us.html ">加入我们</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="contact-us.html ">联系我们</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="code ">
+                <a href="# ">
+                    <img src="../images/qrcode.jpg " alt=" ">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- 移动端底部 -->
+    <div class="footer visible-xs ">
+        <img src="../images/logo_03.png " alt=" ">
+        <div class="footer-code ">
+            <img src="../images/qrcode.jpg " alt=" ">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="footer-list ">
+            <ul>
+                <li>
+                    <a href="# ">环保贡献</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="proposal.html ">市民倡议书</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="exchange-mode.html ">积分兑换</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="join-us.html ">加入我们</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="contact-us.html ">联系我们</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery/jquery.min.js "></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../js/common.js "></script>
+
+
+</body>
+
+</html>

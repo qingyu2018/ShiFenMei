@@ -1,0 +1,247 @@
+.recycle-product {
+    margin-top: 130px;
+}
+
+.recycle-product .prod-main {
+    padding: 0;
+}
+
+.recycle-product .prod-main img {
+    width: 100%;
+}
+
+.recycle-product .prod-main p {
+    font-size: 15px;
+    color: #898989;
+    margin-top: 20px;
+}
+
+.recycle-product .prod-main-title {
+    text-align: center;
+    margin-top: 146px;
+}
+
+.recycle-product .prod-main-title p {
+    display: inline-block;
+    font-size: 28px;
+    color: #231815;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #231815;
+}
+
+.recycle-product .items {
+    margin-top: 96px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.recycle-product .items .items-des {
+    padding-top: 70px;
+}
+
+.recycle-product .items p {
+    font-size: 15px;
+    color: #898989;
+}
+
+.recycle-product .items-img {
+    padding: 10px;
+}
+
+.recycle-product .items-img .comput-img {
+    background: url(../images/recycle-02.png) no-repeat center center;
+    background-size: cover;
+    height: 220px;
+}
+
+.recycle-product .items-img .part-img {
+    background: url(../images/recycle-03.png) no-repeat center center;
+    background-size: cover;
+    height: 220px;
+}
+
+.recycle-product .items-img .pad-img {
+    background: url(../images/recycle-04.png) no-repeat center center;
+    background-size: cover;
+    height: 220px;
+}
+
+.recycle-product .items-img .tele-img {
+    background: url(../images/recycle-05.png) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.recycle-product .items .items-des .line {
+    display: inline-block;
+    width: 76px;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 8px;
+}
+
+.recycle-product .items .items-des .method {
+    margin-left: 20px;
+    font-size: 24px;
+    color: #231815;
+    display: inline-block;
+}
+
+.recycle-product .items-last {
+    margin-bottom: 100px;
+    border: none;
+}
+
+.recycle-title {
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recycle-product .items img {
+    width: 100%;
+}
+
+/* 移动端 */
+
+@media(max-width:767px) {
+    .recycle-product .prod-main p {
+        font-size: 26px;
+        margin-top: 60px;
+        color: #040000;
+    }
+    .recycle-product .prod-main-title {
+        margin-top: 100px;
+    }
+    .recycle-product .items {
+        border: none;
+        margin-top: 80px;
+    }
+    .recycle-product .items p {
+        font-size: 26px;
+        color: #040000;
+        margin-top: 0;
+    }
+    .recycle-product .items-last {
+        margin-top: 0;
+    }
+    .recycle-product .items-last .prod-main-title {
+        margin: 50px 0;
+    }
+    .recycle-product .prod-main-title p {
+        padding-bottom: 20px;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:619px) {
+    .recycle-product {
+        margin-top: 100px;
+    }
+    .recycle-title {
+        font-size: 34px;
+        margin-top: 40px;
+    }
+    .recycle-product .prod-main p {
+        font-size: 24px;
+        margin-top: 50px;
+        color: #040000;
+    }
+    .recycle-product .prod-main-title {
+        margin-top: 80px;
+    }
+    .recycle-product .items {
+        border: none;
+        margin-top: 60px;
+    }
+    .recycle-product .items p {
+        font-size: 24px;
+        color: #040000;
+        margin-top: 0;
+    }
+    .recycle-product .items-last {
+        margin-top: 0;
+    }
+    .recycle-product .items-last .prod-main-title {
+        margin: 40px 0;
+    }
+    .recycle-product .prod-main-title p {
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+}
+
+@media(max-width:539px) {
+    .recycle-product {
+        margin-top: 70px;
+    }
+    .recycle-title {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .recycle-product .prod-main p {
+        font-size: 22px;
+        margin-top: 40px;
+        color: #040000;
+    }
+    .recycle-product .prod-main-title {
+        margin-top: 60px;
+    }
+    .recycle-product .items {
+        border: none;
+        margin-top: 60px;
+    }
+    .recycle-product .items p {
+        font-size: 22px;
+        color: #040000;
+        margin-top: 0;
+    }
+    .recycle-product .items-last {
+        margin-top: 0;
+    }
+    .recycle-product .items-last .prod-main-title {
+        margin: 30px 0;
+    }
+    .recycle-product .prod-main-title p {
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+}
+
+@media(max-width:479px) {
+    .recycle-product {
+        margin-top: 50px;
+    }
+    .recycle-title {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .recycle-product .prod-main p {
+        font-size: 18px;
+        margin-top: 30px;
+        color: #040000;
+    }
+    .recycle-product .prod-main-title {
+        margin-top: 40px;
+    }
+    .recycle-product .items {
+        border: none;
+        margin-top: 40px;
+    }
+    .recycle-product .items p {
+        font-size: 18px;
+        color: #040000;
+        margin-top: 0;
+    }
+    .recycle-product .items-last {
+        margin-top: 0;
+    }
+    .recycle-product .items-last .prod-main-title {
+        margin: 20px 0;
+    }
+    .recycle-product .prod-main-title p {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+}

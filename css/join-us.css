@@ -1,0 +1,262 @@
+.join-banner {
+    height: 338px;
+    background: url(../images/join-us-banner.png) no-repeat center center;
+    text-align: center;
+}
+
+.join-banner div {
+    font-size: 66px;
+    color: #fff;
+    line-height: 338px;
+}
+
+.join-main {
+    background-color: #EEEEEE;
+}
+
+.join-left {
+    padding: 0 5px;
+    padding-top: 60px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.join-left .nav-tabs {
+    border: none;
+}
+
+.join-left .nav-tabs>li {
+    width: 100%;
+}
+
+.join-left .nav-tabs>li a {
+    padding: 0;
+}
+
+.join-left .nav-tabs>li.active>a,
+.join-left .nav-tabs>li.active>a:focus,
+.join-left .nav-tabs>li.active>a:hover {
+    border: none;
+    padding: 0;
+}
+
+.join-left .nav-tabs>li>a:hover {
+    border-color: #fff;
+}
+
+.join-left .nav>li>a:focus,
+.join-left .nav>li>a:hover {
+    background-color: #fff;
+}
+
+.join-left .dt {
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+}
+
+.join-left .dd {
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+.join-left .items-1 {
+    height: 60px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.join-left .items-1 p {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    background-color: #F9F9FA;
+    height: 100%;
+    transition: all .6s;
+}
+
+.join-left .items-1 p:hover {
+    margin-top: -10px;
+}
+
+.items .glyphicon {
+    margin-top: 12px;
+}
+
+.join-question {
+    background-color: #f9f9fa;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 56px 4%;
+}
+
+.join-question .items {
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
+
+.join-question .items>div {
+    padding: 0;
+}
+
+.join-question img {
+    width: 30px;
+    vertical-align: top;
+}
+
+.join-question p {
+    font-size: 10px;
+    line-height: normal;
+    margin: 0;
+    color: #989898;
+}
+
+.join-right {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #989898;
+    padding-bottom: 300px;
+    margin-bottom: 50px;
+}
+
+.join-right .title {
+    border-bottom: 1px solid #ccc;
+    height: 60px;
+    line-height: 60px;
+}
+
+.join-right .sub-title {
+    color: #000;
+    background-color: #f9f9fa;
+    height: 44px;
+    line-height: 44px;
+}
+
+.join-right .requirement {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.join-right .job-office .col-sm-12 {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.join-btn {
+    overflow: hidden;
+}
+
+.join-btn a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    background-color: #46C965;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media(max-width:767px) {
+    .join-main {
+        background-color: #fff;
+    }
+    .join-left {
+        padding-top: 2%;
+    }
+    .join-left .items {
+        height: 72px;
+        line-height: 72px;
+        background-color: #F9F9FA;
+    }
+    .items .glyphicon {
+        margin-top: 24px;
+    }
+    .join-question {
+        margin-bottom: 50px;
+    }
+    .join-question img {
+        width: 54px;
+    }
+    .join-question .items {
+        height: auto;
+    }
+    .join-right {
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+    .join-right .title {
+        font-size: 20px;
+    }
+    .join-right .sub-title {
+        font-size: 20px;
+    }
+    .join-right .requirement {
+        font-size: 20px;
+    }
+    .join-btn a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:619px) {
+    .join-right .title {
+        font-size: 16px;
+    }
+    .join-right .sub-title {
+        font-size: 16px;
+    }
+    .join-right .requirement {
+        font-size: 16px;
+    }
+    .join-btn a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:539px) {
+    .join-question img {
+        width: 34px;
+    }
+    .join-right .title {
+        font-size: 14px;
+    }
+    .join-right .sub-title {
+        font-size: 14px;
+    }
+    .join-right .requirement {
+        font-size: 14px;
+    }
+    .join-btn a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:479px) {
+    .join-right .title>div {
+        padding: 0;
+    }
+    .join-right .sub-title>div {
+        padding: 0;
+    }
+    .join-right .title {
+        font-size: 12px;
+    }
+    .join-right .sub-title {
+        font-size: 12px;
+    }
+    .join-right .requirement {
+        font-size: 12px;
+    }
+    .join-btn a {
+        font-size: 12px;
+    }
+    .join-btn div {
+        padding: 0;
+    }
+}

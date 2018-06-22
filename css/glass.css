@@ -1,0 +1,112 @@
+.glass-product {
+    margin-top: 80px;
+}
+
+.glass-product .container {
+    padding: 0;
+}
+
+.glass-product .items img {
+    width: 100%;
+}
+
+.glass-product .items p {
+    font-size: 15px;
+    color: #000;
+    margin: 56px 0;
+    text-align: center;
+}
+
+.glass-product .items-method {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin: 56px 0;
+    margin-bottom: 32px;
+}
+
+.glass-product .items-method-detail {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    line-height: 48px;
+}
+
+.glass-product .items-last {
+    margin-top: 32px;
+    margin-bottom: 100px;
+}
+
+/* 移动端 */
+
+@media(max-width:767px) {
+    .glass-title .title {
+        font-size: 36px;
+        color: #595757;
+    }
+    .glass-product .items p {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .glass-product .items-method {
+        font-size: 36px;
+    }
+    .glass-product .items-method-detail {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:619px) {
+    .glass-title .title {
+        font-size: 34px;
+        color: #595757;
+    }
+    .glass-product .items p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .glass-product .items-method {
+        font-size: 34px;
+    }
+    .glass-product .items-method-detail {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:539px) {
+    .glass-title .title {
+        font-size: 32px;
+        color: #595757;
+    }
+    .glass-product .items p {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .glass-product .items-method {
+        font-size: 32px;
+    }
+    .glass-product .items-method-detail {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:479px) {
+    .glass-title .title {
+        font-size: 30px;
+        color: #595757;
+    }
+    .glass-product .items p {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .glass-product .items-method {
+        font-size: 28px;
+    }
+    .glass-product .items-method-detail {
+        font-size: 13px;
+    }
+    .glass-product .items-last {
+        margin-top: 32px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,150 @@
+.harmful-title {
+    margin-top: 100px;
+}
+
+.harmful-title .title {
+    width: 250px;
+    color: #000;
+    margin-left: -125px;
+    font-size: 40px;
+}
+
+.harmful-product {
+    color: #231815;
+}
+
+.harmful-product img {
+    width: 100%;
+}
+
+.harmful-product .items {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.harmful-product .item-title {
+    font-size: 38px;
+}
+
+.harmful-product span.num {
+    width: 96px;
+    height: 96px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 58px;
+    text-align: center;
+    line-height: 96px;
+}
+
+.harmful-product .question {
+    margin-left: 20px;
+}
+
+.harmful-product i {
+    display: inline-block;
+    width: 86px;
+    height: 1px;
+    background-color: #231815;
+    margin-bottom: 25px;
+}
+
+.harmful-product .content {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.harmful-product .content-2 i {
+    margin-bottom: 70px;
+}
+
+.harmful-product .content p {
+    display: inline-block;
+    width: 306px;
+    margin-bottom: 20px;
+}
+
+.harmful-product p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.harmful-product .items-2 .img-box {
+    margin-top: 50px;
+}
+
+.harmful-product .items-2 p {
+    display: inline-block;
+    width: 520px;
+}
+
+.harmful-product .items-2 i {
+    margin-bottom: 10px;
+}
+
+.content-3 p:first-child {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.content-3 p:last-child {
+    margin-top: 400px;
+    text-align: center;
+}
+
+.items-4 .img-box {
+    border: 1px solid #ccc;
+}
+
+.harmful-product .items-5 {
+    margin: 0;
+}
+
+.harmful-product .items-9 {
+    margin: 0;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.items-8 .img-box {
+    margin-top: -100px;
+}
+
+.harmful-product .items-11 {
+    margin-bottom: 100px;
+}
+
+@media(max-width:767px) {
+    .harmful-product .question {
+        display: block;
+        margin-top: 5%;
+    }
+    .harmful-product .items {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .harmful-product .content {
+        margin-top: 5%;
+    }
+    .harmful-product .items-2 p {
+        margin-top: 5%;
+    }
+    .mt-100 {
+        margin-top: 0;
+    }
+    .harmful-product .items-2 p {
+        width: 100%;
+    }
+    .harmful-product span.num {
+        width: 16%;
+        height: 10%;
+        line-height: 200%;
+        margin-top: 10%;
+    }
+}

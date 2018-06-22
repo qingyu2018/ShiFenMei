@@ -1,0 +1,180 @@
+.waste-sorting-title .title {
+    width: 250px;
+    color: #000;
+    margin-left: -125px;
+}
+
+.waste-sorting-product img {
+    width: 100%;
+}
+
+.waste-sorting-product .items {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.waste-sorting-product .items div {
+    padding: 0;
+}
+
+.waste-sorting-product p {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.waste-sorting-product .items-1-p {
+    font-size: 12px;
+}
+
+.waste-sorting-product .items .div-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.waste-sorting-product .items-1 p span {
+    color: #376eb5;
+    font-weight: 700;
+}
+
+.waste-sorting-product .items-1 p i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #376eb5;
+    font-style: normal;
+    text-align: center;
+    line-height: 14px;
+    color: #376eb5;
+}
+
+.waste-sorting-product .items-1 p .span-title:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #376EB5;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.waste-sorting-product .items-1 .sm-sorting {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.waste-sorting-product .items-1 .sm-sorting .sprite-1 {
+    height: 60px;
+    background: url(../images/waste-sorting02.png) no-repeat center center;
+    background-size: contain;
+}
+
+.waste-sorting-product .items-1 .sm-sorting .sprite-5 {
+    height: 60px;
+    background: url(../images/waste-sorting06.png) no-repeat center center;
+    background-size: contain;
+}
+
+.waste-sorting-product .items-1 .sm-sorting .sprite-2 {
+    height: 60px;
+    background: url(../images/waste-sorting03.png) no-repeat center center;
+    background-size: contain;
+}
+
+.waste-sorting-product .items-1 .sm-sorting .sprite-3 {
+    height: 60px;
+    background: url(../images/waste-sorting04.png) no-repeat center center;
+    background-size: contain;
+}
+
+.waste-sorting-product .items-1 .sm-sorting .sprite-4 {
+    height: 60px;
+    background: url(../images/waste-sorting05.png) no-repeat center center;
+    background-size: contain;
+}
+
+.waste-sorting-product .items .line {
+    display: inline-block;
+    width: 92px;
+    height: 2px;
+    background-color: #ccc;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.waste-sorting-product .items .p-top {
+    margin-top: 20px;
+}
+
+.items-5 p {
+    font-size: 16px;
+}
+
+.waste-sorting-product .items-6 {
+    margin-bottom: 100px;
+}
+
+@media(max-width: 767px) {
+    .waste-sorting-title .title {
+        width: 260px;
+        margin-left: -130px;
+    }
+    .waste-sorting-product .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .waste-sorting-product .items-1 .sm-sorting .col-sm-2 {
+        height: 100px;
+    }
+    .waste-sorting-product .items-1 .sm-sorting {
+        margin-top: 20%;
+    }
+    .waste-sorting-product .items div {
+        margin-top: 20%;
+    }
+    .waste-sorting-product .items-1 {
+        margin-top: 0;
+    }
+    .waste-sorting-product .items-1 .sm-sorting .col-sm-2 {
+        margin-top: 0;
+    }
+    .waste-sorting-product .mobile-p {
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+    }
+    .mobile-p span {
+        display: inline-block;
+        background-color: #000;
+        vertical-align: middle;
+    }
+    .mobile-p span:first-child {
+        width: 15px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    .mobile-p span:last-child {
+        width: 10px;
+        height: 20px;
+        margin-left: 20px;
+    }
+    .waste-sorting-product .items .waste-direction {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .waste-direction {
+        text-align: center;
+    }
+    .waste-direction img {
+        width: auto;
+    }
+    .waste-sorting-product .items .div-img {
+        margin-bottom: 20%;
+    }
+    .waste-sorting-product .items {
+        margin-top: 0;
+    }
+}

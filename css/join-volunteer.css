@@ -1,0 +1,232 @@
+.join-banner {
+    height: 338px;
+    background: url(../images/join-us-banner.png) no-repeat center center;
+    text-align: center;
+}
+
+.join-banner div {
+    font-size: 66px;
+    color: #fff;
+    line-height: 338px;
+}
+
+.join-main {
+    background-color: #EEEEEE;
+    padding-bottom: 60px;
+}
+
+.join-left {
+    padding: 0 5px;
+    padding-top: 60px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.join-left .dt {
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+}
+
+.join-left .dd {
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+.join-left .items-1 {
+    height: 60px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.join-left .items-1 p {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    background-color: #F9F9FA;
+    height: 100%;
+    transition: all .6s;
+}
+
+.join-left .items-1 p:hover {
+    margin-top: -10px;
+}
+
+.items .glyphicon {
+    margin-top: 12px;
+}
+
+.join-question {
+    background-color: #f9f9fa;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 56px 4%;
+}
+
+.join-question .items {
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
+
+.join-question .items>div {
+    padding: 0;
+}
+
+.join-question img {
+    width: 30px;
+    vertical-align: top;
+}
+
+.join-question p {
+    font-size: 10px;
+    line-height: normal;
+    margin: 0;
+    color: #989898;
+}
+
+.volunteer-right {
+    margin-top: 50px;
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+
+.volunteer-right .dt {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    background-color: #F9F9FA;
+    font-size: 16px;
+    color: #000;
+}
+
+.volunteer-right .items {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.volunteer-right .dd .items-1 {
+    font-size: 16px;
+    color: #989898;
+    height: 64px;
+    line-height: 64px;
+}
+
+.volunteer-right .items .col-sm-6 {
+    padding-left: 0;
+}
+
+.volunteer-right .items .info {
+    background-color: #f9f9fa;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    color: #000;
+    padding-left: 20px;
+}
+
+.volunteer-right form .items {
+    margin-top: 20px;
+}
+
+.volunteer-right form .items-2 {
+    margin: 0;
+}
+
+.volunteer-right .info p {
+    margin: 0;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.volunteer-right form input {
+    background-color: #f9f9fa;
+    width: 60%;
+}
+
+.volunteer-right form .items-4 input {
+    width: 30%;
+}
+
+.volunteer-right form .items-5 input {
+    width: 40%;
+}
+
+.volunteer-right form .volunteer-btn input {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    background-color: #46C965;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.items-6>div {
+    padding-left: 0;
+}
+
+@media(max-width:767px) {
+    .join-main {
+        background-color: #fff;
+        padding-bottom: 0;
+    }
+    .common-title .title {
+        width: 200px;
+        color: #000;
+        background-color: #fff;
+        margin-left: -100px;
+    }
+    .common-title .container .title {
+        color: #000;
+    }
+    .common-title .line {
+        background-color: #000;
+    }
+    .volunteer-right .dt {
+        border: none;
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+        color: #565959;
+    }
+    .volunteer-right .items .info {
+        height: 70px;
+        line-height: 70px;
+        margin-top: 20px;
+    }
+    .volunteer-right .items .info input {
+        height: 66px;
+        line-height: 66px;
+        font-size: 20px;
+    }
+    .volunteer-right form .items {
+        margin: 0;
+    }
+    .volunteer-right form .volunteer-btn input {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:539px) {
+    .common-title .title {
+        width: 160px;
+        color: #000;
+        background-color: #fff;
+        margin-left: -80px;
+    }
+    .volunteer-right .items .info {
+        height: 50px;
+        line-height: 50px;
+    }
+    .volunteer-right .items .info input {
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+    }
+    .volunteer-right form .volunteer-btn input {
+        font-size: 16px;
+    }
+}

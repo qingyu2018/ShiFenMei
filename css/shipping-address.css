@@ -1,0 +1,191 @@
+.main-right .dd .img-box img {
+    width: 100%;
+}
+
+.main-right {
+    color: #575959;
+}
+
+.main-right .dd .col-sm-2 {
+    padding: 0;
+}
+
+.main-right .items {
+    padding-left: 3%;
+}
+
+.items-1 {
+    background-color: #EEEEEF;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.items-2 {
+    margin-top: 2%;
+}
+
+.items-3 div {
+    padding: 0;
+}
+
+.items-3 .col-sm-6 {
+    padding-left: 15px;
+}
+
+.items-3 select {
+    font-size: 10px;
+    height: 20px;
+    padding: 0 12px;
+}
+
+form .col-sm-9 {
+    font-size: 10px;
+}
+
+.items-3 textarea {
+    font-size: 10px;
+}
+
+.items-3 input {
+    font-size: 10px;
+    padding: 0 12px;
+    height: 20px;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    margin: 0;
+    height: 11px;
+    width: 11px;
+    margin-top: 3px;
+}
+
+.items-3 input[type=submit] {
+    background-color: #575959;
+    color: #fff;
+}
+
+form .items {
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.main-right .address-manager {
+    font-size: 10px;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 0;
+}
+
+.address-manager .col-sm-1 {
+    padding: 0;
+}
+
+.address-manager .manager-title {
+    height: 30px;
+    line-height: 30px;
+    background-color: #EEEEEF;
+}
+
+.address-manager .choose-address {
+    height: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.address-manager .checkbox-inline {
+    vertical-align: top;
+}
+
+.address-manager div p {
+    word-break: break-all;
+}
+
+.address-manager div p a {
+    color: #575959;
+}
+
+.default-address {
+    background-color: #575959;
+    color: #fff;
+    text-align: center;
+}
+
+.default-address p {
+    margin: 0;
+}
+
+@media(max-width:767px) {
+    .dd {
+        border-top: 1px solid #ccc;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .mobile-manager {
+        margin-top: 2%;
+    }
+    .mobile-manager .items {
+        overflow: hidden;
+    }
+    .mobile-manager .col-xs-8 {
+        margin-top: 1%;
+    }
+    .mobile-btn {
+        padding: 0;
+        background-color: #46C965;
+        color: #fff;
+        width: 42px;
+        border: none;
+        border-radius: 0;
+    }
+    .mobile-address {
+        border: 1px solid #ccc;
+        margin-top: 5%;
+        padding-top: 2%;
+    }
+    .mobile-address div {
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+@media(max-width:619px) {
+    .mobile-manager .col-xs-8 {
+        margin-top: 0;
+    }
+    .mobile-manager .col-xs-8 input {
+        height: 26px;
+        font-size: 14px
+    }
+    .mobile-manager .col-xs-8 textarea {
+        font-size: 14px
+    }
+}
+
+@media(max-width:539px) {
+    .mobile-manager .col-xs-4 {
+        padding: 0;
+    }
+    .mobile-manager .col-xs-8 {
+        margin-top: 1%;
+    }
+    .mobile-manager .col-xs-8 input {
+        height: 20px;
+        font-size: 12px
+    }
+    .mobile-manager .col-xs-8 textarea {
+        font-size: 12px
+    }
+    .mobile-product .items p.mobile-receiver {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:479px) {
+    .address-temp {
+        font-size: 12px;
+    }
+}

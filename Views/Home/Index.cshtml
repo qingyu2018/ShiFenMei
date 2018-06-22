@@ -1,31 +1,1173 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "石分美";
 }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <title>石分美</title>
+
+
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/swiper/swiper.min.css" rel="stylesheet">
+
+    <link href="../../css/common.css" rel="stylesheet">
+    <link href="../../css/index.css" rel="stylesheet">
+
+
+
+    <!--[if lt IE 9]>
+     <script src="../lib/bootstrap/html5shiv.min.js"></script>
+     <script src="../lib/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+
+    <header class="sfm-topbar hidden-sm hidden-xs">
+        <div class="container">
+            <!--未登录时显示，向class中添加hidden可以隐藏-->
+            <div class="pull-left">
+                <div class="login">
+                    <a href="page/login.html">
+                        登录
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="page/register.html">注册</a>
+                </div>
+
+                <input type="text">
+            </div>
+            <!--登录后显示 class中的hidden控制隐藏-->
+            <div class="pull-left hidden">
+                <div class="topbar-personal-center">
+                    <a href="page/personal-data.html">
+                        个人中心
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="javascript:;">退出</a>
+                </div>
+
+                <input type="text">
+
+            </div>
+            <div class="pull-right">
+                <ul>
+                    <li class="classify-knowledge parent-menu" data-bind-menu="#classifySubMenu">
+                        <a href="page/classify.html">分类知识</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="page/proposal.html">市民倡议书</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="javascript:;">考核入口</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="page/join-us.html">加入我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="page/sfm-introduce.html">关于我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="help parent-menu" data-bind-menu="#helpSubMenu">
+                        <a href="page/help.html">帮助</a>
+
+                    </li>
+                    <div class="sub-menu help-menu" id="helpSubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="page/service.html">服务范围</a>
+                                </li>
+                                <li>
+                                    <a href="page/exchange-mode.html">兑换规则</a>
+                                </li>
+                                <li>
+                                    <a href="page/integral-rule.html">积分规则</a>
+                                </li>
+                                <li>
+                                    <a href="page/partake.html">如何参与</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-menu sort-menu" id="classifySubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="page/waste-sorting.html">垃圾四分类</a>
+                                </li>
+                                <li>
+                                    <a href="page/change-waste.html">变废为宝</a>
+                                </li>
+                                <li>
+                                    <a href="page/glass.html">玻璃类</a>
+                                </li>
+                                <li>
+                                    <a href="page/recycle.html">电子可回收物</a>
+                                </li>
+                                <li>
+                                    <a href="page/metal.html">金属类</a>
+                                </li>
+                                <li>
+                                    <a href="page/plastic.html">塑料类</a>
+                                </li>
+                                <li>
+                                    <a href="page/harmful.html">有害垃圾</a>
+                                </li>
+                                <li>
+                                    <a href="page/paper.html">纸类</a>
+                                </li>
+                                <li>
+                                    <a href="page/love-donations.html">爱心捐赠</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="line"></li>
+                    <li class="wechat">
+                        <a href="javascript:;">
+                            <img src="../../images/wechat_03.png" alt="">
+                        </a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="mobile">
+                        <a href="javascript:;">
+                            <img src="../../images/mobile_03.png" alt="">
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <nav class="navbar sfm-nav">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">
+                    <img src="../../images/logo_03.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            | 环保贡献 |
+
+                        </a>
+                    </li>
+                    <li class="parent-menu" data-bind-menu="#news-center">
+                        <a href="page/news-center.html">
+                            <span>| 新闻中心 |</span>
+                        </a>
+
+                    </li>
+
+                    <li class="logo-li hidden-xs">
+                        <a href="#">
+                            <img src="../../images/logo_03.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/exchange-mode.html">| 积分兑换 |</a>
+                    </li>
+                    <li>
+                        <a href="#">| 践行者语录|</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="news-menu sub-menu hidden-xs" id="news-center">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">活动详情</a>
+                    </li>
+                    <li>
+                        <a href="#">工作推进</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- 导航开始 -->
+    <!-- 轮播图开始 -->
+
+    <section class="sfm-banner">
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../../images/slide-01.jpg" class="hidden-xs" alt="1">
+                        <img src="../../images/mobile-slide01.png" class="hidden-lg hidden-md hidden-sm" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../../images/slide-01.jpg " class="hidden-xs" alt="2 ">
+                        <img src="../../images/mobile-slide01.png" class="hidden-lg hidden-md hidden-sm" alt="">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- 轮播图结束 -->
+    <!-- 环保贡献开始 -->
+
+    <section class="sfm-environment">
+        <div class="product-title">
+            <p class="">环保贡献</p>
+            <p class="">Environmental Contribution</p>
+        </div>
+
+        <div class="environment-items">
+            <div class="container">
+                <div class="col-sm-3 animated scroll-response" data-scroll-animate="fadeInUp">
+                    <div class="img-box">
+                        <img class="static" src="../../images/envir-01.png" alt="">
+                        <img class="dynamic envir-01" src="../../images/envir-01.gif" alt="">
+                    </div>
+
+                    <p class="num">
+                        <span class="rolling-num" data-target-num="85541">0</span>
+                        <span>棵</span>
+                    </p>
+                    <p class="details">回收报纸保护</p>
+                </div>
+                <div class="col-sm-3 animated scroll-response" data-scroll-animate="fadeInUp">
+                    <div class="img-box">
+                        <img class="static" src="../../images/envir-02.png" alt="">
+                        <img class="dynamic" src="../../images/envir-02.gif" alt="">
+                    </div>
+
+                    <p class="num">
+                        <span class="rolling-num" data-target-num="9554">0</span>
+                        <span>度</span>
+                        <span class="rolling-num" data-target-num="17569">0</span>
+                        <span>克</span>
+                    </p>
+                    <p class="details">回收报纸保护</p>
+                </div>
+                <div class="col-sm-3 animated scroll-response" data-scroll-animate="fadeInUp">
+                    <div class="img-box">
+                        <img class="static" src="../../images/envir-03.png" alt="">
+                        <img class="dynamic" src="../../images/envir-03.gif" alt="">
+                    </div>
+
+                    <p class="num">
+                        <span class="rolling-num" data-target-num="115541">0</span>
+                        <span>吨</span>
+                    </p>
+                    <p class="details">回收报纸保护</p>
+                </div>
+                <div class="col-sm-3 animated scroll-response" data-scroll-animate="fadeInUp">
+                    <div class="img-box">
+                        <img class="static" src="../../images/envir-04.png" alt="">
+                        <img class="dynamic" src="../../images/envir-04.gif" alt="">
+                    </div>
+
+                    <p class="num">
+                        <span class="rolling-num" data-target-num="75597">0</span>
+                        <span>吨</span>
+                    </p>
+                    <p class="details">回收报纸保护</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 环保贡献结束 -->
+    <!-- 变废为宝开始 -->
+
+    <section class="sfm-treasure">
+        <div class="product-title animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+            <p>变废为宝</p>
+            <p>Change waste into treasure</p>
+        </div>
+
+        <div class="treasure-items hidden-xs">
+            <div class="container">
+                <div class="treasure-items-wrap ">
+                    <ul class="items-list">
+                        <li class="item-media">
+                            <img src="../../images/change-waste-01.png " class="treasure-img" alt="">
+                            <p>塑料变废为宝</p>
+                            <div class="details animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">垃圾分类放，美丽石家庄</div>
+                            <div class="direction-right">
+                                <img src="../../images/direction-right.png" alt="">
+                            </div>
+
+                        </li>
+                        <li class="item-media">
+                            <img src="../../images/change-waste-02.png " class="treasure-img" alt="">
+                            <p>塑料变废为宝</p>
+                            <div class="details animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+                                利用易拉罐做手工的方法又增加一个， 今年看球后留下的一大堆废弃易拉罐又 可以有机会变废为宝了
+                            </div>
+                            <div class="direction-right">
+                                <img src="../../images/direction-right.png" alt="">
+                            </div>
+
+                        </li>
+                        <li class="item-media">
+                            <img src="../../images/change-waste-03.png " class="treasure-img" alt="">
+                            <p>塑料变废为宝</p>
+                            <div class="details animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+                                家里废纸多去了，怎么重新利用起来呢。 利用废纸折叠起来当笔筒，除了物尽其用， 也能节省不少存放文具的空间哦。
+                            </div>
+                            <div class="direction-right">
+                                <img src="../../images/direction-right.png" alt="">
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+
+
+                </div>
+                <div class="sfm-btn">
+                    <a href="page/change-waste.html" class="read-more">
+                        <span class="left">
+                            阅读更多 |
+                        </span>
+                        <span class="right">
+                            &nbsp;&nbsp;&nbsp;→
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="treasure-banner hidden-lg hidden-md hidden-sm">
+            <div class="container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="treasure-items-wrap treasure-slide-items">
+                                <ul class="items-list">
+                                    <li class="item-media">
+                                        <img src="../../images/change-waste-01.png " class="treasure-img" alt="">
+                                        <p>塑料变废为宝</p>
+                                        <div class="details" data-scroll-animate="fadeInUp">垃圾分类放，美丽石家庄</div>
+                                        <div class="direction-right special-right">
+                                            <img src="../../images/direction-right.png" alt="">
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="treasure-items-wrap treasure-slide-items">
+                                <ul class="items-list">
+                                    <li class="item-media">
+                                        <img src="../../images/change-waste-02.png " class="treasure-img" alt="">
+                                        <p>塑料变废为宝</p>
+                                        <div class="details" data-scroll-animate="fadeInUp">
+                                            利用易拉罐做手工的方法又增加一个， 今年看球后留下的一大堆废弃易拉罐又 可以有机会变废为宝了
+                                        </div>
+                                        <div class="direction-right special-right">
+                                            <img src="../../images/direction-right.png" alt="">
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="treasure-items-wrap treasure-slide-items">
+                                <ul class="items-list">
+                                    <li class="item-media">
+                                        <img src="../../images/change-waste-03.png " class="treasure-img" alt="">
+                                        <p>塑料变废为宝</p>
+                                        <div class="details" data-scroll-animate="fadeInUp">
+                                            家里废纸多去了，怎么重新利用起来呢。 利用废纸折叠起来当笔筒，除了物尽其用， 也能节省不少存放文具的空间哦。
+                                        </div>
+                                        <div class="direction-right special-right">
+                                            <img src="../../images/direction-right.png" alt="">
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="sfm-btn">
+                <a href="page/change-waste.html" class="read-more">
+                    <span class="left">
+                        阅读更多 |
+                    </span>
+                    <span class="right">
+                        &nbsp;&nbsp;&nbsp;→
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- 变废为宝结束 -->
+    <!-- 积分兑换开始 -->
+
+    <section class="sfm-integral">
+        <div class="product-title animated  two-second-animate scroll-response scroll-response" data-scroll-animate="fadeInUp">
+            <p>积分兑换</p>
+            <p>Environmental Contribution</p>
+        </div>
+        <div class="integral-items">
+            <div class="container">
+                <div class="item-wrap">
+                    <div class="col-sm-3 col-xs-6 description">
+                        <div class="item-msg">
+                            <p class="item-num">
+                                <span>01</span>
+                            </p>
+                            <p class="item-content">微信提现</p>
+                        </div>
+
+                        <img src="../../images/integral-02.png" class="mt animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp"
+                             alt="">
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 description">
+                        <img src="../../images/integral-01.png" class="animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp" alt="">
+                        <div class="item-msg mt">
+                            <p class="item-num">
+                                <span>02</span>
+                            </p>
+                            <p class="item-content">现场兑换</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 description">
+                        <div class="item-msg">
+                            <p class="item-num">
+                                <span>03</span>
+                            </p>
+                            <p class="item-content">超市现金券</p>
+                        </div>
+
+                        <img id="a123" src="../../images/integral-04.png" class="mt animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp"
+                             alt="">
+
+                    </div>
+                    <div class="col-sm-3  col-xs-6 description">
+                        <img src="../../images/integral-03.png" class="animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp" alt="">
+                        <div class="item-msg mt">
+                            <p class="item-num ">
+                                <span>04</span>
+                            </p>
+                            <p class="item-content">积分兑换</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="sfm-btn">
+                    <a href="page/integral-rule.html" class="read-more">
+                        <span class="left">
+                            了解兑换规则 |
+                        </span>
+                        <span class="right">
+                            &nbsp;&nbsp;&nbsp;→
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 积分兑换结束 -->
+
+    <section class="sfm-slogen hidden-sm hidden-xs"></section>
+    <!-- 分类知识开始 -->
+    <section class="sfm-classified">
+        <div class="product-title animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+            <p>分类知识</p>
+            <p>Classified knowledge</p>
+        </div>
+        <div class="container hidden-xs">
+            <div class="classified-items">
+                <ul>
+                    <li>
+                        <a href="page/waste-sorting.html">
+                            <div>
+                                <img src="../../images/categories-01.jpg" alt="">
+                            </div>
+
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">垃圾分类四分法</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/paper.html">
+                            <div>
+                                <img src="../../images/categories-02.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">纸类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/plastic.html">
+                            <div>
+                                <img src="../../images/categories-03.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">塑料类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/love-donations.html">
+                            <div>
+                                <img src="../../images/categories-04.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">爱心捐物</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/metal.html">
+                            <div>
+                                <img src="../../images/categories-05.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">金属类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/glass.html">
+                            <div>
+                                <img src="../../images/categories-06.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">玻璃类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/harmful.html">
+                            <div>
+                                <img src="../../images/categories-07.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">有害垃圾</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page/recycle.html">
+                            <div>
+                                <img src="../../images/categories-08.jpg" alt="">
+                            </div>
+                            <p class="animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">电子可回收物</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="classified-carousel" class="carousel slide classified-carousel hidden-lg hidden-md hidden-sm" data-ride="carousel">
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/waste-sorting.html">
+                                    <div>
+                                        <img src="../../images/categories-01.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">垃圾分类四分法</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/paper.html">
+                                    <div>
+                                        <img src="../../images/categories-02.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">纸类</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/plastic.html">
+                                    <div>
+                                        <img src="../../images/categories-03.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">塑料类</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/love-donations.html">
+                                    <div>
+                                        <img src="../../images/categories-04.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">爱心捐物</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/metal.html">
+                                    <div>
+                                        <img src="../../images/categories-05.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">金属类</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/glass.html">
+                                    <div>
+                                        <img src="../../images/categories-06.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">玻璃类</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/harmful.html">
+                                    <div>
+                                        <img src="../../images/categories-07.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">有害垃圾</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="classified-items classified-slide-items">
+                        <ul>
+                            <li>
+                                <a href="page/recycle.html">
+                                    <div>
+                                        <img src="../../images/categories-08.jpg" alt="">
+                                    </div>
+
+                                    <p class="animated " data-scroll-animate="fadeInUp">电子可回收物</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#classified-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#classified-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- 分类知识结束开始 -->
+    <!-- 活动详情开始 -->
+
+    <section class="sfm-activity">
+        <div class="container">
+            <div class="activity col-md-6 col-sm-6 col-xs-12">
+                <div class="activity-content mobile-css">
+                    <div class="content-title">
+                        <p class="hidden-xs p-img">
+                            <img src="../../images/activity-icon.jpg" alt="">
+                        </p>
+
+                        <span>活动详情</span>
+                        <p class="sub-title hidden-lg hidden-md hidden-sm">NEWS</p>
+
+                    </div>
+                    <div class="content-info">
+                        <img src="../../images/office-01.jpg" class="office animated two-second-animate " alt="">
+                        <p class="info-title animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+                            石家庄这几地将实施生活垃圾强制分类 有你家吗
+                        </p>
+                        <p class="p-line hidden-lg hidden-md hidden-sm"></p>
+                        <p class="info-detail animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">日前，石家庄市制定生活垃圾分类工作实施方案（2018-2020年），加快建立分类投放、分类收集、分类运输、分类处理的垃圾处理系，形成以法治为基政府推动......</p>
+                        <div class="direction-right hidden-lg hidden-md hidden-sm">
+                            <img src="../../images/direction-right.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sfm-btn">
+                        <a href="page/news-center.html" class="read-more mobile-css">
+                            <span class="left">
+                                阅读更多 |
+                            </span>
+                            <span class="right">
+                                &nbsp;&nbsp;&nbsp;→
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="activity col-md-6 col-sm-6 col-xs-12">
+                <div class="activity-content hidden-xs">
+                    <div class="content-title">
+                        <p class="hidden-xs p-img">
+                            <img src="../../images/activity-icon.jpg" alt="">
+                        </p>
+
+                        <span>工作推进</span>
+                        <p class="sub-title hidden-lg hidden-md hidden-sm">NEWS</p>
+                    </div>
+                    <div class="content-info">
+                        <img src="../../images/office-01.jpg " class="office  animated  two-second-animate" alt="">
+                        <p class="info-title animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+                            石家庄这几地将实施生活垃圾强制分类 有你家吗
+                        </p>
+                        <p class="p-line hidden-lg hidden-md hidden-sm"></p>
+                        <p class="info-detail animated two-second-animate scroll-response" data-scroll-animate="fadeInUp">日前，石家庄市制定生活垃圾分类工作实施方案（2018-2020年），加快建立分类投放、分类收集、分类运输、分类处理的垃圾处理系，形成以法治为基政府推动......</p>
+                    </div>
+                    <div class="sfm-btn">
+                        <a href="page/news-center.html" class="read-more">
+                            <span class="left">
+                                阅读更多 |
+                            </span>
+                            <span class="right">
+                                &nbsp;&nbsp;&nbsp;→
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="activity-content hidden-lg hidden-md hidden-sm">
+
+                    <div class="content-info">
+                        <img src="../../images/office-01.jpg " class="office  animated  two-second-animate" alt="">
+
+                    </div>
+                    <div class="content-title mobile-css">
+                        <p class="hidden-xs p-img">
+                            <img src="../../images/activity-icon.jpg" alt="">
+                        </p>
+
+                        <span class="span-bor">工作推进</span>
+
+                        <p class="sub-content sub-content-mt hidden-lg hidden-md hidden-sm">垃圾分类放</p>
+                        <p class="sub-content hidden-lg hidden-md hidden-sm">美丽石家庄，垃圾分类放</p>
+                    </div>
+                    <div class="sfm-btn">
+                        <a href="page/news-center.html" class="read-more">
+                            <span class="left">
+                                阅读更多 |
+                            </span>
+                            <span class="right">
+                                &nbsp;&nbsp;&nbsp;→
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 活动详情结束 -->
+    <!-- 践行者语录开始 -->
+
+    <section class="sfm-quotations">
+
+
+        <div class="product-title animated  two-second-animate scroll-response" data-scroll-animate="fadeInUp">
+            <p>践行者语录</p>
+            <p>Classified knowledge</p>
+        </div>
+        <div class="container ">
+            <div class="top-box hidden-xs ">
+                <div class="img-box ">
+                    <img src="../../images/tower.jpg " alt=" ">
+                </div>
+                <div class="swiper-container ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="quo-box ">
+                                <div class="quotations ">
+                                    <div class="quotations-top ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box ">
+                                            <div class="quotations-mascot ">
+                                                <img src="../../images/mascot.png " alt=" ">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" swiper-slide ">
+                            <div class="quo-box ">
+                                <div class="quotations ">
+                                    <div class="quotations-top ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box">
+                                            <div class="quotations-mascot">
+                                                <img src="../../images/mascot.png " alt=" ">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="quo-box ">
+                                <div class="quotations ">
+                                    <div class="quotations-top ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box ">
+                                            <div class="quotations-mascot ">
+                                                <img src="../../images/mascot.png " alt=" ">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="quotations-btn hidden-xs ">
+                        <div class="swiper-button-prev ">
+                            <p>
+                                <span class="glyphicon glyphicon-menu-up "></span>
+                            </p>
+                        </div>
+                        <div class="swiper-button-next ">
+                            <p>
+                                <span class="glyphicon glyphicon-menu-down "></span>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="bot-box hidden-xs ">
+
+                <div class="quotations-shares hidden-xs ">
+                    <p>分享</p>
+                    <p>石分美垃圾分类平台</p>
+                </div>
+                <img src="../../images/sharing-01.jpg " alt=" ">
+                <img src="../../images/sharing-02.jpg " alt=" ">
+                <img src="../../images/sharing-03.jpg " alt=" ">
+
+            </div>
+            <!-- 移动端 -->
+            <div class=" hidden-lg hidden-md hidden-sm ">
+                <div class=" mobile-img-box ">
+                    <img src="../../images/tower.jpg " alt=" ">
+                </div>
+                <div>
+                    <div class="quotations ">
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide ">
+                                    <div class="quotations-top hidden-lg hidden-md hidden-sm ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box ">
+                                            <div class="quotations-mascot ">
+                                                <img src="../../images/mascot.png " alt=" ">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="quotations-top hidden-lg hidden-md hidden-sm ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box ">
+                                            <div class="quotations-mascot ">
+                                                <img src="../../images/mascot.png" alt="">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="quotations-top hidden-lg hidden-md hidden-sm ">
+                                        <h2>践行者语录</h2>
+                                        <div class="quotations-box ">
+                                            <div class="quotations-mascot ">
+                                                <img src="../../images/mascot.png " alt=" ">
+                                            </div>
+                                            <div class="quotations-info">
+                                                <p>每个月爱纷纷都会在小区开展现场活动，您在家门口就可以兑换到想要的礼品点击查看小区现场活动安排。</p>
+                                                <p>您也可以随时在爱纷纷官网“积分商城”兑换礼品。</p>
+
+                                                <p>实物礼品目前支持两种配送方式，根据礼品不同您可选择现场自提或第三方配送，5个工作日内送达;虚拟礼品如话费和Q币，均为自动到账，下单成功后，系统10分钟之内会帮您充值，请自助查询。</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 如果需要导航按钮 -->
+                            <div class="quotations-btn ">
+                                <div class="swiper-button-prev ">
+                                    <p>
+                                        <span class="glyphicon glyphicon-menu-up "></span>
+                                    </p>
+                                </div>
+                                <div class="swiper-button-next ">
+                                    <p>
+                                        <span class="glyphicon glyphicon-menu-down "></span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="quotations-mobile hidden-lg hidden-md hidden-sm ">
+                            <div class="quotations-shares-mobile ">
+                                <p>分享</p>
+                                <p>石分美垃圾分类平台</p>
+                            </div>
+
+                        </div>
+                        <div class="quotations-bot hidden-lg hidden-md hidden-sm ">
+
+                            <img src="../../images/sharing-01.jpg " alt=" ">
+                            <img src="../../images/sharing-02.jpg " alt=" ">
+                            <img src="../../images/sharing-03.jpg " alt=" ">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 践行者语录结束 -->
+    <!-- 底部开始 -->
+
+    <footer class=" hidden-xs ">
+        <div class="container ">
+
+
+            <div class="logo ">
+                <a href=" ">
+                    <img src="../../images/logo_03.png " alt=" ">
+                </a>
+            </div>
+            <div class="footer-list ">
+                <ul>
+                    <li>
+                        <a href="#">环保贡献</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="page/proposal.html">市民倡议书</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="page/exchange-mode.html">积分兑换</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="page/join-us.html">加入我们</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="page/contact-us.html">联系我们</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="code ">
+                <a href=" ">
+                    <img src="../../images/qrcode.jpg " alt=" ">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- 移动端底部 -->
+    <div class="footer visible-xs ">
+        <img src="../../images/logo_03.png " alt=" ">
+        <div class="footer-code ">
+            <img src="../../images/qrcode.jpg " alt=" ">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="footer-list ">
+            <ul>
+                <li>
+                    <a href="#">环保贡献</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="page/proposal.html">市民倡议书</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="page/exchange-mode.html">积分兑换</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="page/join-us.html">加入我们</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="page/contact-us.html">联系我们</a>
+
+                </li>
+
+            </ul>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <!-- 底部结束 -->
+    <script src="../../lib/jquery/jquery.min.js "></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../../lib/swiper/swiper.min.js "></script>
+    <script src="../../js/common.js "></script>
+    <script src="../../js/index.js "></script>
+</body>
+
+</html>
+

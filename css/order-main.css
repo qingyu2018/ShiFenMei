@@ -1,0 +1,14 @@
+.order-main {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.order-main img {
+    width: 100%;
+}
+
+.item-title {
+    font-size: 26px;
+    margin-top: 20px;
+    color: #000;
+}

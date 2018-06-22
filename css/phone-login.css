@@ -1,0 +1,47 @@
+.login-acount .content input,
+.login-password .content input,
+.register-phone .content input {
+    margin-top: 8px;
+}
+
+.verify-code {
+    width: 24%;
+    background-color: #46C965;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-acount .content input,
+.login-password .content input,
+.register-phone .content input {
+    width: 50%;
+}
+
+@media(max-width:767px) {
+    .verify-code {
+        width: 24%;
+        height: 34px;
+        font-size: 20px;
+        line-height: 34px;
+        color: #fff;
+        background-color: rgba(51, 204, 102, .4);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:539px) {
+    .verify-code {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:479px) {
+    .verify-code {
+        font-size: 12px;
+    }
+}

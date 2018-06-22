@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+
+    <title>电子可回收物</title>
+
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/recycle.css" rel="stylesheet">
+
+
+
+    <!--[if lt IE 9]>
+     <script src="../lib/bootstrap/html5shiv.min.js"></script>
+     <script src="../lib/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header class="sfm-topbar hidden-sm hidden-xs">
+        <div class="container">
+            <!--未登录时显示，向class中添加hidden可以隐藏-->
+            <div class="pull-left">
+                <div class="login">
+                    <a href="login.html">
+                        登录
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+
+                <input type="text">
+            </div>
+            <!--登录后显示 class中的hidden控制隐藏-->
+            <div class="pull-left hidden">
+                <div class="topbar-personal-center">
+                    <a href="personal-data.html">个人中心
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="#">退出</a>
+                </div>
+
+                <input type="text">
+
+            </div>
+            <div class="pull-right">
+                <ul>
+                    <li class="classify-knowledge parent-menu" data-bind-menu="#classifySubMenu">
+                        <a href="classify.html">分类知识</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="proposal.html">市民倡议书</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">考核入口</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="join-us.html">加入我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="sfm-introduce.html">关于我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="help parent-menu" data-bind-menu="#helpSubMenu">
+                        <a href="help.html">帮助</a>
+
+                    </li>
+                    <div class="sub-menu help-menu" id="helpSubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="service.html">服务范围</a>
+                                </li>
+                                <li>
+                                    <a href="exchange-mode.html">兑换规则</a>
+                                </li>
+                                <li>
+                                    <a href="integral-rule.html">积分规则</a>
+                                </li>
+                                <li>
+                                    <a href="partake.html">如何参与</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-menu sort-menu" id="classifySubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="waste-sorting.html">垃圾四分类</a>
+                                </li>
+                                <li>
+                                    <a href="change-waste.html">变废为宝</a>
+                                </li>
+                                <li>
+                                    <a href="glass.html">玻璃类</a>
+                                </li>
+                                <li>
+                                    <a href="recycle.html">电子可回收物</a>
+                                </li>
+                                <li>
+                                    <a href="metal.html">金属类</a>
+                                </li>
+                                <li>
+                                    <a href="plastic.html">塑料类</a>
+                                </li>
+                                <li>
+                                    <a href="harmful.html">有害垃圾</a>
+                                </li>
+                                <li>
+                                    <a href="paper.html">纸类</a>
+                                </li>
+                                <li>
+                                    <a href="love-donations.html">爱心捐赠</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="line"></li>
+                    <li class="wechat">
+                        <a href="contact-us.html">
+                            <img src="../images/wechat_03.png" alt="">
+                        </a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="mobile">
+                        <a href="contact-us.html">
+                            <img src="../images/mobile_03.png" alt="">
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <nav class="navbar sfm-nav mobile-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">
+                    <img src="../images/logo_03.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 环保贡献 |
+
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="../index.html">首页
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="parent-menu hidden-xs" data-bind-menu="#news-center">
+                        <a href="news-center.html">
+                            <span>| 新闻中心 |</span>
+                        </a>
+                    </li>
+                    <li class="logo-li hidden-xs">
+                        <a href="../index.html">
+                            <img src="../images/logo_03.png" alt="">
+                        </a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="exchange-mode.html">| 积分兑换 |</a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 践行者语录|</a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="classify.html">分类知识
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="news-center.html">新闻中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="center-index.html">个人中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="sfm-introduce.html">关于我们
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="help.html">帮助
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-menu sub-menu hidden-xs" id="news-center">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="news-center.html">活动详情</a>
+                        </li>
+                        <li>
+                            <a href="news-center.html">工作推进</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航结束 -->
+    <section class="classify-title hidden-xs">
+        <div class="container">
+            <div class="title">
+                <span>
+                    <a href="classify.html" style="color:#666">分类知识</a>
+                </span>
+                <span class="glyphicon glyphicon-menu-right"></span>
+                <span>电子可回收物</span>
+            </div>
+        </div>
+    </section>
+    <section class="classify-return visible-xs">
+        <div class="container">
+            <div>
+                <a href="">
+                    <img src="../images/classify-return.png" alt="">
+                    <span>返回列表</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="recycle-title visible-xs">电子可回收物</section>
+    <section class="recycle-product">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2 prod-main">
+                <img src="../images/recycle-01.png" alt="">
+                <p class="animated scroll-response tj" data-scroll-animate="fadeInUp">那什么电子可回收物呢？例如我们工作用的平板电脑或是笔记本电脑，我们平常使用的手机以及家里用来放食物冰箱还有用来加热水的电热水壶，做饭用的电磁炉，做美食用的烤箱和果汁机，到了夏天我们用的空调，电风扇，冬天用的暖气机和空气清新机还有我们之前用的音响和收音机等。这些都是属于电子可回收物。
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-12 prod-main-title">
+                <p>可用器件</p>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="items">
+                <div class="col-sm-8 items-des hidden-xs">
+
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft"> 电子器具的外壳一般由铁制、塑制、钢制或铝制。因此，可从电子废弃物中回收塑料和铁、钢、铝等金属，从而进行二次利用； 电视机和显示器中的显像管含有玻璃，可进行大量的玻璃回收；显像管茎上的偏转线圈是铜制的，可进行铜的回收；废旧空调、
+                        制冷器具中的蒸发器、冷凝器含有高精度的铝和铜，可进行大量的回收。
+                    </p>
+                </div>
+                <div class="col-sm-4 items-img">
+
+                    <div class="comput-img hidden-xs"></div>
+                    <img class="visible-xs" src="../images/recycle-02.png" alt="">
+                </div>
+                <div class="col-sm-8 items-des visible-xs">
+
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft"> 电子器具的外壳一般由铁制、塑制、钢制或铝制。因此，可从电子废弃物中回收塑料和铁、钢、铝等金属，从而进行二次利用； 电视机和显示器中的显像管含有玻璃，可进行大量的玻璃回收；显像管茎上的偏转线圈是铜制的，可进行铜的回收；废旧空调、
+                        制冷器具中的蒸发器、冷凝器含有高精度的铝和铜，可进行大量的回收。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="items">
+
+                <div class="col-sm-4 items-img">
+
+                    <img class="visible-xs" src="../images/recycle-03.png" alt="">
+                    <div class="part-img hidden-xs"></div>
+
+                </div>
+                <div class="col-sm-8 items-des">
+
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInRight"> 电子器具的外壳一般由铁制、塑制、钢制或铝制。因此，可从电子废弃物中回收塑料和铁、钢、铝等金属，从而进行二次利用； 电视机和显示器中的显像管含有玻璃，可进行大量的玻璃回收；显像管茎上的偏转线圈是铜制的，可进行铜的回收；废旧空调、
+                        制冷器具中的蒸发器、冷凝器含有高精度的铝和铜，可进行大量的回收。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="items">
+                <div class="col-sm-8 items-des hidden-xs">
+
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft"> 电子器具的外壳一般由铁制、塑制、钢制或铝制。因此，可从电子废弃物中回收塑料和铁、钢、铝等金属，从而进行二次利用； 电视机和显示器中的显像管含有玻璃，可进行大量的玻璃回收；显像管茎上的偏转线圈是铜制的，可进行铜的回收；废旧空调、
+                        制冷器具中的蒸发器、冷凝器含有高精度的铝和铜，可进行大量的回收。
+                    </p>
+                </div>
+                <div class="col-sm-4 items-img">
+                    <img class="visible-xs" src="../images/recycle-04.png" alt="">
+                    <div class="pad-img hidden-xs"></div>
+                </div>
+                <div class="col-sm-8 items-des visible-xs ">
+
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInLeft"> 电子器具的外壳一般由铁制、塑制、钢制或铝制。因此，可从电子废弃物中回收塑料和铁、钢、铝等金属，从而进行二次利用； 电视机和显示器中的显像管含有玻璃，可进行大量的玻璃回收；显像管茎上的偏转线圈是铜制的，可进行铜的回收；废旧空调、
+                        制冷器具中的蒸发器、冷凝器含有高精度的铝和铜，可进行大量的回收。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="items items-last">
+                <div class="col-sm-8 items-img">
+                    <div class="tele-img hidden-xs"></div>
+                    <div class="col-xs-12 prod-main-title hidden-lg hidden-md hidden-sm">
+                        <p class="animated scroll-response" data-scroll-animate="fadeInRight">处理方法</p>
+                        <span class="line"></span>
+                    </div>
+
+
+                    <img class="visible-xs" src="../images/recycle-05.png" alt="">
+
+
+                </div>
+                <div class="col-sm-4 items-des">
+
+
+
+                    <p class="hidden-xs">
+                        <span class="line"></span>
+                        <span class="method animated scroll-response" data-scroll-animate="fadeInRight">处理方法</span>
+                    </p>
+                    <p class="animated scroll-response tj" data-scroll-animate="fadeInRight">
+                        把表面擦拭干净，较小物品装入石分美回 收袋中封好口，贴上二维码，按照指定时 间投入分类回收点。如物品较小可装 入密封塑料袋中，贴上二维码，按照指定时 间投入分类回收点。 大件废旧电器，在工作日内拨打 客服电话0311—88868683登记，周六、日
+                        安排石分美工作人员上门回收。
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- pc端底部 -->
+    <footer class=" hidden-xs ">
+        <div class="container ">
+
+
+            <div class="logo ">
+                <a href=" ">
+                    <img src="../images/logo_03.png " alt=" ">
+                </a>
+            </div>
+            <div class="footer-list ">
+                <ul>
+                    <li>
+                        <a href="# ">环保贡献</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="proposal.html ">市民倡议书</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="exchange-mode.html ">积分兑换</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="join-us.html ">加入我们</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="contact-us.html ">联系我们</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="code ">
+                <a href="# ">
+                    <img src="../images/qrcode.jpg " alt=" ">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- 移动端底部 -->
+    <div class="footer visible-xs ">
+        <img src="../images/logo_03.png " alt=" ">
+        <div class="footer-code ">
+            <img src="../images/qrcode.jpg " alt=" ">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="footer-list ">
+            <ul>
+                <li>
+                    <a href="# ">环保贡献</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="proposal.html ">市民倡议书</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="exchange-mode.html ">积分兑换</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="join-us.html ">加入我们</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="contact-us.html ">联系我们</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery/jquery.min.js "></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../js/common.js "></script>
+
+
+</body>
+
+</html>

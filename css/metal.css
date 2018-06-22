@@ -1,0 +1,124 @@
+.sub-title {
+    font-size: 22px;
+    color: #231815;
+    line-height: 100px;
+    text-align: center;
+}
+
+.metal-product .items {
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: #EFEFEF;
+}
+
+.metal-product .container div {
+    padding: 0;
+}
+
+.metal-product img {
+    width: 100%;
+}
+
+.metal-product .items-01,
+.metal-product .items-04 {
+    margin-top: 0;
+    background-color: #fff;
+}
+
+.metal-product .items-01 span.line,
+.metal-product .items-04 span.line {
+    display: inline-block;
+    width: 134px;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 20%;
+}
+
+.metal-product p {
+    font-size: 20px;
+    color: #231815;
+}
+
+.metal-product .items-01 p,
+.metal-product .items-04 p {
+    margin-top: 10%;
+}
+
+.metal-product .p-title {
+    font-size: 24px;
+}
+
+.metal-product .items .text-pad {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.metal-product .items-02 p:last-child {
+    margin-top: 3%;
+}
+
+.metal-product .items-04 {
+    margin-top: 50px;
+}
+
+.metal-product .items-04 span.line {
+    background-color: #7AAE3B;
+}
+
+.metal-product .items-05 {
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+@media(max-width:767px) {
+    .metal-product .items img {
+        width: 80%;
+    }
+    .metal-product .items-01 img {
+        width: 100%;
+    }
+    .metal-product .items-01 .line-wrap,
+    .metal-product .items-04 .line-wrap {
+        text-align: center;
+    }
+    .metal-product .items-01 span.line,
+    .metal-product .items-04 span.line {
+        background-color: #7AAE3B;
+        height: 2px;
+        margin-top: 8%;
+    }
+    .metal-product .container {
+        padding: 0;
+    }
+    .metal-product .items-01 p {
+        width: 80%;
+        margin-left: 20%;
+    }
+    .metal-product .items .text-pad {
+        padding-bottom: 10%;
+        padding-right: 5%;
+    }
+    .metal-product .col-sm-4 {
+        background-color: #fff;
+    }
+    .metal-product .items-04 p {
+        width: 80%;
+        margin-left: 5%;
+    }
+    .metal-product .items-04 img {
+        margin-top: 5%;
+    }
+    .metal-product .items-04 .col-sm-6 {
+        text-align: center;
+    }
+    .metal-product .items-05 .col-sm-10 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .sub-title p,
+    .mobile-product .items p {
+        font-size: 16px;
+    }
+}

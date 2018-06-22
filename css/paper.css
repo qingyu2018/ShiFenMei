@@ -1,0 +1,137 @@
+/* 分类知识-纸类样式 */
+
+.paper-title-container {
+    text-align: center;
+}
+
+.paper-title-container .title {
+    display: inline-block;
+    color: #231815;
+    position: static;
+    width: auto;
+    margin: 0;
+}
+
+.paper-title-container .line-box {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.paper-title-line {
+    display: inline-block;
+    width: 36px;
+    height: 8px;
+    background-color: #000;
+}
+
+.paper-product .items {
+    margin-top: 50px;
+}
+
+.paper-product img {
+    width: 100%;
+}
+
+.paper-product .items-2 {
+    text-align: center;
+}
+
+.paper-product .pc-item-title {
+    font-size: 28px;
+    color: #040000;
+    margin-bottom: 40px;
+}
+
+.paper-product p {
+    font-size: 15px;
+    color: #030000;
+}
+
+.paper-product .items-3 {
+    text-align: center;
+    font-size: 0;
+}
+
+.paper-product .items-3 img {
+    width: auto;
+}
+
+.items-4 .item-title {
+    color: #000;
+    font-size: 34px;
+}
+
+.paper-product .sub-title {
+    color: #7FB637;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.paper-product .sub-img {
+    margin-top: 50px;
+}
+
+.paper-product .sub-img img {
+    width: 70%;
+}
+
+.paper-product .items-5 {
+    overflow: hidden;
+}
+
+.paper-product .items-5 div {
+    padding: 0;
+}
+
+.paper-product .items-5 .paper-8 img {
+    margin-top: 10%;
+}
+
+.paper-product .items-7 div {
+    padding: 0;
+}
+
+.paper-product .items-7 {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+@media(max-width:767px) {
+    .paper-product .items p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .paper-product .pc-item-title {
+        padding-left: 5%;
+    }
+    .paper-product .items-2,
+    .paper-product .items-4 {
+        text-align: left;
+    }
+    .paper-product .paper-2 {
+        margin-top: 8%;
+    }
+    .paper-product .sub-img img {
+        width: 100%;
+    }
+    .paper-product .sub-title {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .box-img {
+        margin-top: 10%;
+    }
+    .paper-product .box-img img {
+        width: 100%;
+    }
+    .paper-product .items-6 {
+        text-align: left;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:399px) {
+    .mobile-product .items .item-title {
+        font-size: 28px;
+    }

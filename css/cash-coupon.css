@@ -1,0 +1,175 @@
+.coupon-main {
+    height: 685px;
+    background: url(../images/cash-coupon-pc-01.png) no-repeat center center;
+    margin-top: 20px;
+    color: #030000;
+}
+
+.coupon-content {
+    margin-top: 214px;
+}
+
+.coupon-left {
+    height: 224px;
+    background: url(../images/cash-coupon-pc-02.png) no-repeat center center;
+    background-size: contain;
+    color: #fff;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.coupon-left .icon {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.coupon-left .amount {
+    font-size: 84px;
+    vertical-align: middle;
+}
+
+.coupon-left p {
+    font-size: 32px;
+    margin: 0;
+    margin-top: -14px;
+}
+
+@media (min-width:767px) and (max-width:991px) {
+    .coupon-left .icon {
+        font-size: 20px;
+    }
+    .coupon-left .amount {
+        font-size: 64px;
+    }
+    .coupon-left p {
+        font-size: 24px;
+        margin-top: -14px;
+    }
+    .coupon-left {
+        padding-top: 22%;
+    }
+}
+
+.coupon-right .title {
+    font-size: 26px;
+}
+
+.coupon-right>div {
+    margin-top: 4px;
+}
+
+.coupon-right .num-wrap {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.num-wrap span {
+    float: left;
+}
+
+.num-wrap .title {
+    margin-right: 10px;
+}
+
+.num-wrap .num {
+    width: 112px;
+    height: 30px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    box-sizing: content-box;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.num-wrap .num .minus {
+    width: 30px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #EDEDED;
+}
+
+.num-wrap .num .degital {
+    width: 52px;
+    background-color: #fff;
+    background-color: transparent;
+}
+
+.num-wrap .num .plus {
+    width: 30px;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #EDEDED;
+}
+
+.coupon-right .coupon-btn {
+    width: 150px;
+    height: 34px;
+    background-color: #85C034;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.coupon-btn a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+
+.coupon-right .coupon-tips {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #666666;
+}
+
+@media(max-width:767px) {
+    .coupon-main {
+        background: none;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .coupon-main .container {
+        padding: 0;
+    }
+    .coupon-content {
+        margin-top: 30px;
+    }
+    .mobile-box {
+        padding: 0;
+        position: relative;
+    }
+    .mobile-box img {
+        width: 100%;
+    }
+    .coupon-right {
+        position: absolute;
+        height: 300px;
+        width: 210px;
+        left: 50%;
+        top: 50%;
+        margin-top: -130px;
+        margin-left: -105px;
+    }
+    .common-title .title {
+        width: 300px;
+        margin-left: -150px;
+    }
+}
+
+@media(max-width:539px) {
+    .common-title .title {
+        width: 200px;
+        margin-left: -100px;
+    }
+}
+
+@media(max-width:479px) {
+    .coupon-right .coupon-tips {
+        margin-top: 30px;
+    }
+}

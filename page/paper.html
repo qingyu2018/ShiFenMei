@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+
+    <title>纸类</title>
+
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/paper.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="../lib/bootstrap/html5shiv.min.js"></script>
+        <script src="../lib/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header class="sfm-topbar hidden-sm hidden-xs">
+        <div class="container">
+            <!--未登录时显示，向class中添加hidden可以隐藏-->
+            <div class="pull-left">
+                <div class="login">
+                    <a href="login.html">
+                        登录
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+
+                <input type="text">
+            </div>
+            <!--登录后显示 class中的hidden控制隐藏-->
+            <div class="pull-left hidden">
+                <div class="topbar-personal-center">
+                    <a href="personal-data.html">个人中心
+                    </a>
+                    <span class="line"></span>
+                </div>
+                <div class="register">
+                    <a href="#">退出</a>
+                </div>
+
+                <input type="text">
+
+            </div>
+            <div class="pull-right">
+                <ul>
+                    <li class="classify-knowledge parent-menu" data-bind-menu="#classifySubMenu">
+                        <a href="classify.html">分类知识</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="proposal.html">市民倡议书</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">考核入口</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="join-us.html">加入我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="sfm-introduce.html">关于我们</a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="help parent-menu" data-bind-menu="#helpSubMenu">
+                        <a href="help.html">帮助</a>
+
+                    </li>
+                    <div class="sub-menu help-menu" id="helpSubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="service.html">服务范围</a>
+                                </li>
+                                <li>
+                                    <a href="exchange-mode.html">兑换规则</a>
+                                </li>
+                                <li>
+                                    <a href="integral-rule.html">积分规则</a>
+                                </li>
+                                <li>
+                                    <a href="partake.html">如何参与</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-menu sort-menu" id="classifySubMenu">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="waste-sorting.html">垃圾四分类</a>
+                                </li>
+                                <li>
+                                    <a href="change-waste.html">变废为宝</a>
+                                </li>
+                                <li>
+                                    <a href="glass.html">玻璃类</a>
+                                </li>
+                                <li>
+                                    <a href="recycle.html">电子可回收物</a>
+                                </li>
+                                <li>
+                                    <a href="metal.html">金属类</a>
+                                </li>
+                                <li>
+                                    <a href="plastic.html">塑料类</a>
+                                </li>
+                                <li>
+                                    <a href="harmful.html">有害垃圾</a>
+                                </li>
+                                <li>
+                                    <a href="paper.html">纸类</a>
+                                </li>
+                                <li>
+                                    <a href="love-donations.html">爱心捐赠</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="line"></li>
+                    <li class="wechat">
+                        <a href="contact-us.html">
+                            <img src="../images/wechat_03.png" alt="">
+                        </a>
+
+                    </li>
+                    <li class="line"></li>
+                    <li class="mobile">
+                        <a href="contact-us.html">
+                            <img src="../images/mobile_03.png" alt="">
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <nav class="navbar sfm-nav mobile-nav">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">
+                    <img src="../images/logo_03.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 环保贡献 |
+
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="../index.html">首页
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+
+                        </a>
+                    </li>
+                    <li class="parent-menu hidden-xs" data-bind-menu="#news-center">
+                        <a href="news-center.html">
+                            <span>| 新闻中心 |</span>
+                        </a>
+
+                    </li>
+                    <div class="news-menu sub-menu hidden-xs" id="news-center">
+                        <ul>
+                            <li>
+                                <a href="news-center.html">活动详情</a>
+                            </li>
+                            <li>
+                                <a href="news-center.html">工作推进</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="logo-li hidden-xs">
+                        <a href="../index.html">
+                            <img src="../images/logo_03.png" alt="">
+                        </a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="exchange-mode.html">| 积分兑换 |</a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="../index.html">| 践行者语录|</a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="classify.html">分类知识
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="news-center.html">新闻中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="center-index.html">个人中心
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="sfm-introduce.html">关于我们
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="help.html">帮助
+                            <span class="glyphicon glyphicon-plus pull-right"></span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- 导航结束 -->
+
+    <section class="classify-title hidden-xs">
+        <div class="container">
+            <div class="title">
+                <span>
+                    <a href="classify.html" style="color:#666">分类知识</a>
+                </span>
+                <span class="glyphicon glyphicon-menu-right"></span>
+                <span>纸类</span>
+            </div>
+        </div>
+    </section>
+    <section class="classify-return visible-xs">
+        <div class="container">
+            <div>
+                <a href="">
+                    <img src="../images/classify-return.png" alt="">
+                    <span>返回列表</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="common-title animated scroll-response" data-scroll-animate="fadeIn">
+        <div class="container paper-title-container">
+            <div class="">
+
+                <p class="title">纸类</p>
+            </div>
+            <div class="line-box hidden-xs">
+                <span class="paper-title-line"></span>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="paper-product mobile-product">
+        <div class="container">
+            <div class="items items-1">
+                <img src="../images/paper01.png" alt="">
+            </div>
+            <div class="items items-2">
+                <!--***********************************************动画****************************************-->
+                <div class="item-title pc-item-title">纸&nbsp;的&nbsp;成&nbsp;分</div>
+                <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                    <p class="hidden-xs">纸的原料主要是植物纤维，原料中除含有纤维素、</p>
+                    <p class="hidden-xs">半纤维素、木素三大主要成分外，</p>
+                    <p class="hidden-xs">尚有其他含量较少的组分,如树脂、灰份等。</p>
+                    <p class="hidden-xs">此外还有硫酸钠等辅助成分</p>
+                    <p class="visible-xs tj">纸的原料主要是植物纤维,原料中除含有纤维素、半纤维素木素三大主要成分外,尚有其他含量较少的组分,如树脂、灰份等。此外还有硫酸钠等辅助成分</p>
+                </div>
+            </div>
+            <div class="items items-3">
+                <div class="item-title">纸的分类及其处理方法</div>
+                <div class="paper-2 hidden-xs">
+                    <img src="../images/paper02.png" alt="">
+                </div>
+                <div class=" hidden-xs">
+                    <img src="../images/paper03.png" alt="">
+                    <img src="../images/paper05.png" alt="">
+                </div>
+                <div class="visible-xs box-img">
+                    <img src="../images/paper03.png" alt="">
+                </div>
+            </div>
+            <div class="items items-4 text-center">
+                <div class="item-title hidden-xs">纸的分类及其处理方法</div>
+
+                <p class="item-title sub-title">软纸：</p>
+                <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                    <p class="hidden-xs">软纸包括：书、报纸、试卷、作业本、日记本、用过的打印纸、杂志、广告宣</p>
+                    <p class="hidden-xs">传纸。以上物品无污染方可收回。</p>
+                    <p class="visible-xs tj">软纸包括：书、报纸、试卷、作业本、日记本、用过的打印纸、杂志、广告宣传纸。以上物品无污染方可收回。</p>
+
+                </div>
+                <div class="sub-img text-center visible-xs">
+                    <img src="../images/paper06.png" alt="">
+                </div>
+                <div>
+                    <p class="item-title sub-title">处理方法:</p>
+                    <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                        <p class="hidden-xs">软纸要压平，整理整齐，将尺寸小的纸张，夹在大的报纸内以便固定，整理</p>
+                        <p class="hidden-xs"> 整齐后，装入石分美回收袋中封好口，
+                        </p>
+                        <p class="hidden-xs">贴上二维码，按照指定时间投入分类回收点。</p>
+                        <p class="hidden-xs">如尺寸较大可用绳子十字交叉捆牢，防止散开，将二维码直接贴在</p>
+                        <p class="hidden-xs">纸捆上的明显处</p>
+                        <p class="visible-xs tj">软纸要压平，整理整齐，将尺寸小的纸张，夹在大的报纸内以便固定，整理整齐后，装入石分美回收袋中封好口，贴上二维码，按照指定时间投入分类回收点。如尺寸较大可用绳子十字交叉捆牢，防止散开，将二维码直接贴在纸捆上的明显处</p>
+                    </div>
+                </div>
+                <div class="box-img visible-xs">
+                    <img src="../images/paper07.png" alt="">
+                </div>
+                <div class="sub-img text-center hidden-xs">
+                    <img src="../images/paper06.png" alt="">
+                </div>
+                <div>
+                    <p class="item-title sub-title">硬纸:</p>
+                    <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                        <p class="hidden-xs">硬纸包括：纸箱、纸板、纸质药盒、烟盒、纸质酒类包装盒、各类家电、电
+                        </p>
+                        <p class="hidden-xs"> 子产品包装盒，及其他纸质包装盒。
+                        </p>
+                        <p class="visible-xs tj">硬纸包括：纸箱、纸板、纸质药盒、烟盒、纸质酒类包装盒、各类家电、电子产品包装盒，及其他纸质包装盒。</p>
+                    </div>
+                    <div class="box-img hidden-lg hidden-md hidden-sm">
+                        <img src="../images/paper09.png" alt="">
+                    </div>
+
+                </div>
+                <div>
+                    <p class="item-title sub-title">处理方法:</p>
+                    <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                        <p class="hidden-xs">硬纸要将箱类拆开，超大的纸箱要用裁纸刀裁成适合装入回收袋大小。</p>
+                        <p class="hidden-xs"> 裁好压平后，装入石分美回收袋中封好口，贴上二维码，按照指定时间
+                        </p>
+                        <p class="hidden-xs">投入</p>
+                        <p class="hidden-xs">分类回收点。如尺寸较大也可直接用绳子十字交叉捆牢，防止散开，将二维
+                        </p>
+                        <p class="hidden-xs">码直接贴在纸捆上的明显处</p>
+                        <p class="visible-xs tj">硬纸要将箱类拆开，超大的纸箱要用裁纸刀裁成适合装入回收袋大小。裁好压平后，装入石分美回收袋中封好口，贴上二维码，按照指定时间投入分类回收点。如尺寸较大也可直接用绳子十字交叉捆牢，防止散开，将二维码直接贴在纸捆上的明显处</p>
+                    </div>
+                    <div class="box-img hidden-lg hidden-md hidden-sm">
+                        <img src="../images/paper11.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="items items-5 hidden-xs">
+                <div class="col-sm-4 col-sm-offset-2">
+
+                    <img src="../images/paper07.png" alt="">
+                    <img src="../images/paper09.png" alt="">
+                </div>
+                <div class="col-sm-4 paper-8">
+                    <img src="../images/paper08.png" alt="">
+                </div>
+            </div>
+            <div class="items items-6 text-center">
+                <div class="item-title pc-item-title">禁忌物</div>
+                <div class="animated scroll-response" data-scroll-animate="fadeInUp">
+                    <p class="hidden-xs">禁忌物（不可掺入的物品）：复写纸、塑料书皮，塑料薄膜包装。被污染</p>
+                    <p class="hidden-xs">的纸制品、纸箱制品不可回收。纸巾和卫生纸是不可</p>
+                    <p class="hidden-xs">回收的，属于其他垃圾。
+                    </p>
+                    <p class="visible-xs tj">禁忌物（不可掺入的物品）：复写纸、塑料书皮，塑料薄膜包装。被污染的纸制品、纸箱制品不可回收。纸巾和卫生纸是不可回收的，属于其他垃圾。</p>
+                </div>
+            </div>
+            <div class="items items-7 hidden-xs">
+                <div class="col-sm-6">
+                    <img src="../images/paper11.png" alt="">
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="../images/paper10.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pc端底部 -->
+    <footer class=" hidden-xs ">
+        <div class="container ">
+
+
+            <div class="logo ">
+                <a href=" ">
+                    <img src="../images/logo_03.png " alt=" ">
+                </a>
+            </div>
+            <div class="footer-list ">
+                <ul>
+                    <li>
+                        <a href="# ">环保贡献</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="proposal.html ">市民倡议书</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="exchange-mode.html ">积分兑换</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="join-us.html ">加入我们</a>
+                        <span class="line "></span>
+                    </li>
+                    <li>
+                        <a href="contact-us.html ">联系我们</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="code ">
+                <a href="# ">
+                    <img src="../images/qrcode.jpg " alt=" ">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- 移动端底部 -->
+    <div class="footer visible-xs ">
+        <img src="../images/logo_03.png " alt=" ">
+        <div class="footer-code ">
+            <img src="../images/qrcode.jpg " alt=" ">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="footer-list ">
+            <ul>
+                <li>
+                    <a href="# ">环保贡献</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="proposal.html ">市民倡议书</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="exchange-mode.html ">积分兑换</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="join-us.html ">加入我们</a>
+                    <span class="line "></span>
+                </li>
+                <li>
+                    <a href="contact-us.html ">联系我们</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery/jquery.min.js "></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../js/common.js "></script>
+
+
+</body>
+
+</html>

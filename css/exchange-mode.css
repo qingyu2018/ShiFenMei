@@ -1,0 +1,117 @@
+.mode-main {
+    margin: 80px 0;
+}
+
+.mode-main .tips {
+    font-size: 20px;
+    color: #000;
+}
+
+.sfm-integral {
+    padding-bottom: 120px;
+}
+
+.sfm-integral .container div {
+    padding: 0;
+}
+
+.sfm-integral .container .item-msg {
+    border: 1px solid #517E3B;
+}
+
+.sfm-integral .product-title {
+    padding-top: 52px;
+    padding-bottom: 60px;
+    background-color: #F9F9F9;
+}
+
+.sfm-integral .integral-items .description {
+    text-align: center;
+    margin-left: -1px;
+    position: relative;
+    max-width: 100%;
+    transition: margin .3s;
+}
+
+@media(min-width:768px) {
+    .sfm-integral .integral-items .description img {
+        max-width: 100%;
+        transition: all .3s;
+    }
+    .sfm-integral .integral-items .description:first-child {
+        margin: 0;
+    }
+    .sfm-integral .integral-items .description:hover {
+        margin-top: -5px;
+        box-shadow: 0 18px 20px rgba(0, 0, 0, 0.2);
+    }
+    .sfm-integral .integral-items .description .wrap {
+        position: absolute;
+        border: 1px solid #bbb;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .sfm-integral .integral-items .description .wrap:hover {
+        width: 90%;
+        height: 96%;
+        top: 2%;
+        left: 5%;
+        opacity: 1;
+    }
+}
+
+.mt {
+    margin-top: -1px;
+}
+
+.sfm-integral .integral-items .description .item-num {
+    font-size: 60px;
+    color: #000;
+    margin: 0;
+    padding: 12% 20%;
+}
+
+.sfm-integral .integral-items .description .item-num span {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+}
+
+.sfm-integral .integral-items .description .item-content {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.sfm-integral img {
+    width: 100%;
+    border: 1px solid #517E3B;
+}
+
+.sfm-slogen img {
+    width: 100%;
+}
+
+.sfm-integral .read-more {
+    width: 170px;
+}
+
+@media(max-width:400px) {
+    .sfm-integral .integral-items .description .item-num {
+        font-size: 45px;
+    }
+    .sfm-integral .integral-items .description .item-content {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:479px) {
+    .mode-main .tips {
+        font-size: 16px;
+    }
+}

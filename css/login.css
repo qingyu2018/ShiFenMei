@@ -1,0 +1,381 @@
+html,
+body {
+    height: 100%;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    margin: 0;
+    vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(87, 88, 89, .2);
+}
+
+input:-moz-placeholder {
+    color: rgba(87, 88, 89, .2);
+}
+
+input::-moz-placeholder {
+    color: rgba(87, 88, 89, .2);
+}
+
+input:-ms-input-placeholder {
+    color: rgba(87, 88, 89, .2);
+}
+
+.personal-center {
+    position: relative;
+    z-index: 1;
+}
+
+.login-main {
+    height: 100%;
+    background: url(../images/login-bg.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-main .login-title {
+    font-size: 22px;
+    color: #fff;
+    padding: 0 18%;
+    text-align: center;
+}
+
+.login-main .login-title a {
+    color: #fff;
+}
+
+.login-main .login-form form {
+    margin-top: 40px;
+}
+
+.login-title .glyphicon {
+    margin-top: 1%;
+}
+
+.login-acount,
+.login-password,
+.register-phone {
+    padding: 0 18%;
+}
+
+.login-acount .content,
+.login-password .content,
+.register-phone .content {
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+}
+
+.login-acount .content .img-box,
+.login-password .content .img-box,
+.register-phone .content .img-box {
+    display: inline-block;
+    width: 46px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login-acount .content .line,
+.login-password .content .line,
+.register-phone .content .line {
+    width: 1px;
+    height: 40px;
+    background-color: #ccc;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.login-acount .content input,
+.login-password .content input,
+.register-phone .content input {
+    font-size: 20px;
+    margin-left: 10px;
+    width: 70%;
+    vertical-align: middle;
+}
+
+.login-password,
+.register-phone {
+    margin-top: 3%;
+}
+
+.login-details {
+    padding: 0 18%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.login-details div {
+    padding: 0;
+}
+
+.login-details a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-main a:hover {
+    text-decoration: none;
+}
+
+.login-details .remember {
+    font-weight: normal;
+}
+
+.login-details input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    margin-top: 5%;
+}
+
+.login-btn .i-btn {
+    display: inline-block;
+    width: 94px;
+    height: 34px;
+    background-color: rgba(87, 88, 89, .2);
+    border-radius: 16px;
+    line-height: 34px;
+}
+
+.login-btn .i-btn a {
+    font-size: 23px;
+    color: #fff;
+    display: block;
+}
+
+.login-main .line {
+    background-color: #fff;
+}
+
+.qcode-title p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.common-title {
+    margin-top: 5%;
+}
+
+@media(min-width:768px) {
+    .login-main .pc-container {
+        position: absolute;
+        top: 50%;
+        height: 568px;
+        margin-top: -284px;
+        left: 50%;
+        margin-left: -375px;
+    }
+}
+
+@media(min-width:992px) {
+    .login-main .pc-container {
+        top: 50%;
+        height: 568px;
+        margin-top: -284px;
+        left: 50%;
+        margin-left: -485px;
+    }
+}
+
+@media(min-width:1200px) {
+    .login-main .pc-container {
+        position: absolute;
+        top: 50%;
+        height: 568px;
+        margin-top: -284px;
+        left: 50%;
+        margin-left: -585px;
+    }
+    .login-main .login-title,
+    .login-acount,
+    .login-password,
+    .register-phone {
+        padding: 0 18%;
+    }
+    .login-details {
+        padding: 0 18%;
+    }
+}
+
+@media(max-width:991px) {
+    .login-main .login-title,
+    .login-acount,
+    .login-password,
+    .login-details,
+    .register-phone {
+        padding: 0 10%;
+    }
+}
+
+@media(max-width:767px) {
+    .login-main {
+        height: auto;
+        background: #fff;
+        position: static;
+        width: 100%;
+    }
+    .login-main .mobile-product {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .login-main .mobile-product .items-1 {
+        margin-top: 20px;
+    }
+    .login-main .mobile-product .items-1 a {
+        color: #000;
+    }
+    .mobile-product .items-2 {
+        text-align: center;
+        margin-top: 13%;
+        margin-bottom: 10%;
+    }
+    .mobile-product .icon-box {
+        display: inline-block;
+        width: 122px;
+        height: 122px;
+        background-color: rgb(87, 88, 89, .2);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 122px;
+    }
+    .mobile-product .icon-box img {
+        width: 70%;
+    }
+    .login-main .login-title,
+    .login-acount,
+    .login-password,
+    .register-phone,
+    .login-details {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        border-bottom: 1px solid #ccc;
+    }
+    .login-details {
+        border: none;
+        padding-left: 4%;
+    }
+    .login-details div {
+        text-align: left;
+    }
+    .login-details div input {
+        width: 18px;
+        height: 18px;
+        margin-right: 20px;
+    }
+    .login-details .remember {
+        font-size: 20px;
+        color: rgba(87, 88, 89, .7);
+        font-weight: normal;
+    }
+    .login-acount .content input,
+    .login-password .content input,
+    .register-phone .content input {
+        font-size: 22px;
+    }
+    .login-btn {
+        margin-top: 3%;
+    }
+    .login-btn .i-btn {
+        display: block;
+        width: 100%;
+        height: 70px;
+        border-radius: 0;
+        line-height: 70px;
+        background-color: rgba(51, 204, 102, .4);
+    }
+    .find-password a {
+        display: block;
+        color: rgba(87, 88, 89, .7);
+        margin-top: 3%;
+    }
+    .login-main .line {
+        background-color: rgba(87, 88, 89, .7);
+        margin-top: 4%;
+    }
+    .qcode-title p {
+        color: rgba(87, 88, 89, .7);
+    }
+    .login-main .login-title {
+        margin-top: 0;
+    }
+    .qcode-title .col-xs-12 {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .qcode-title .col-xs-12>div {
+        padding: 0;
+    }
+    .img-qcode {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:539px) {
+    .mobile-product .icon-box {
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+    }
+    .login-acount .img-box img {
+        width: 33px;
+    }
+    .login-password .img-box img,
+    .register-phone .img-box img {
+        width: 25px;
+    }
+    .login-acount .content input,
+    .login-password .content input,
+    .register-phone .content input {
+        font-size: 16px;
+    }
+    .login-details {
+        padding-left: 6%;
+    }
+    .login-details div input {
+        width: 12px;
+        height: 12px;
+    }
+    .login-details .remember {
+        font-size: 12px;
+    }
+    .login-btn .i-btn {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width:479px) {
+    .mobile-product .icon-box {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+    }
+    .qcode-title .qcode-box p {
+        font-size: 14px;
+    }
+    .login-main .line {
+        margin-top: 0;
+    }
+    .img-qcode {
+        width: 100%;
+    }
+}
