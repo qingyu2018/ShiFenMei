@@ -96,6 +96,16 @@ D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\zh-Hans\Microsoft
 D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
 D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\obj\Debug\ShiFenMei.csprojResolveAssemblyReference.cache
 D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\obj\Debug\ShiFenMei.dll
 D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\obj\Debug\ShiFenMei.pdb
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\BLL.dll
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\Model.dll
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\DAL.dll
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\DBUtility.dll
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\BLL.pdb
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\Model.pdb
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\DAL.pdb
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\DBUtility.pdb
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\obj\Debug\ShiFenMei.csprojResolveAssemblyReference.cache
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\WeChatClass.dll
+D:\我的文档\客户程序\石分美\ShiFenMei\ShiFenMei\bin\WeChatClass.pdb

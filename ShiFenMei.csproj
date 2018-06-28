@@ -508,6 +508,7 @@
     <Content Include="js\exchange.js" />
     <Content Include="js\index.js" />
     <Content Include="js\join-us.js" />
+    <Content Include="js\jquery.cookie.js" />
     <Content Include="js\login.js" />
     <Content Include="js\love-donations.js" />
     <Content Include="js\product-details.js" />
@@ -593,7 +594,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -627,9 +630,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\GetPassword.cshtml" />
+    <Content Include="Views\Account\PhoneLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
@@ -639,6 +643,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{fa645092-c758-41a4-ac3b-6d4a42056b49}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{d7b7a728-6110-4cf7-9bd7-a0ef766dd66c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeChatClass\WeChatClass.csproj">
+      <Project>{83029ad0-9a2f-4bd0-b94d-903a890c2d1e}</Project>
+      <Name>WeChatClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

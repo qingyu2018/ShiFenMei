@@ -9,6 +9,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ShiFenMei.Models;
+using BLL;
+using Model;
+using WeChatClass;
+using System.Collections.Generic;
 
 namespace ShiFenMei.Controllers
 {
@@ -17,7 +21,9 @@ namespace ShiFenMei.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
+        BLL_User U = new BLL_User();
+        WeChatHelper W = new WeChatHelper();
+        ReturnMessage RM = new ReturnMessage();
         public AccountController()
         {
         }
@@ -55,42 +61,128 @@ namespace ShiFenMei.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login()
         {
-            ViewBag.ReturnUrl = returnUrl;
+            ViewBag.QRInfo = W.GetQRCode();
             return View();
         }
 
-        //
-        // POST: /Account/Login
+        /// <summary>
+        /// POST: /Account/PCLogin
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
+        public JsonResult PCLogin()
         {
-            if (!ModelState.IsValid)
+            int errCount = 0;
+
+            string sResult = "";
+            if (U.checkErroCountSession(out errCount))  //检查session，是否登录错误超过3次，如果超过3次，有没有过了锁定时间15分钟
             {
-                return View(model);
+                RM.Code = "10001";
+                RM.Msg = "您已连续输入错误5次，请15分钟后再试！";
+                return Json(RM);
+            }
+            if (U.checkErroCountIP(System.Web.HttpContext.Current.Request.UserHostAddress, out errCount))  //检查IP，是否登录错误超过3次，如果超过3次，有没有过了锁定时间15分钟
+            {
+                RM.Code = "10002";
+                RM.Msg = "您已连续输入错误5次，请15分钟后再试！";
+                return Json(RM);
             }
 
-            // 这不会计入到为执行帐户锁定而统计的登录失败次数中
-            // 若要在多次输入错误密码的情况下触发帐户锁定，请更改为 shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+            string phone = Request["phone"];
+            string password = Request["psw"];
+            if (phone == null || password == null)
             {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "无效的登录尝试。");
-                    return View(model);
+                RM.Code = "10003";
+                RM.Msg = "请输入手机号和密码！";
+                return Json(RM);
             }
+
+            User user = U.GetUserByPhone(phone);
+            if (user == null || user.PassWord != password)
+            {
+                U.addErrorCountSession(); //给session累加错误次数
+                U.addErrorCountIP(Request.UserHostAddress); //给IP累加错误次数
+                                                                  //addErrorCountDB(phone);  //给数据库里的账号累加错误次数
+
+                if (U.checkErroCountSession(out errCount))  //检查session，是否登录错误超过3次，如果超过3次，有没有过了锁定时间15分钟
+                {
+                    RM.Code = "10004";
+                    RM.Msg = "手机号或者密码错误！<br/>您已连续输入错误5次，请15分钟后再试！<br/>";
+                    return Json(RM);
+                }
+                if (U.checkErroCountIP(System.Web.HttpContext.Current.Request.UserHostAddress, out errCount))  //检查session，是否登录错误超过3次，如果超过3次，有没有过了锁定时间15分钟
+                {
+                    RM.Code = "10005";
+                    RM.Msg = "手机号或者密码错误！<br/>您已连续输入错误5次，请15分钟后再试！<br/>";
+                    return Json(RM);
+                }
+
+                if (errCount >= 3)
+                {
+                    RM.Code = "10006";
+                    RM.Msg = "手机号或者密码错误！<br/><font color='black'>【已错误" + errCount.ToString() + "次，连续错误5次会被锁定15分钟】</font>";
+                    return Json(RM);
+                }
+                else
+                {
+                    RM.Code = "10007";
+                    RM.Msg = "手机号或者密码错误！";
+                    return Json(RM);
+                }
+            }
+
+            System.Web.HttpContext.Current.Session["ErrorCount"] = null;  //清除session错误次数
+            System.Web.HttpContext.Current.Session["ErrorTime"] = null;
+            System.Web.HttpContext.Current.Session["User"] = user;
+            U.addErrorCountIP(System.Web.HttpContext.Current.Request.UserHostAddress, 0);
+
+            RM.Code = "0";
+            RM.Msg = "登录成功！";
+            return Json(RM);
         }
+        /// <summary>
+        /// POST: /Account/WechatLogin
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        public JsonResult WechatLogin()
+        {
+            string RndNum = Request["RndNum"] + string.Empty;
+            User UM = U.WinXinScan(RndNum);
+            if (UM != null)
+            {
+                System.Web.HttpContext.Current.Session["User"] = UM;
+                RM.Code = "0";
+                RM.Msg = "登录成功！";
+                return Json(RM);
+            }
 
+            RM.Code = "10008";
+            RM.Msg = "微信登录失败！";
+            return Json(RM);
+        }
+        /// <summary>
+        /// POST: /Account/GetPassword
+        /// </summary>
+        /// <returns></returns>
+        [AllowAnonymous]
+        public ActionResult GetPassword()
+        {
+            return View();
+        }
+        /// <summary>
+        /// POST: /Account/PhoneLogin
+        /// </summary>
+        /// <returns></returns>
+        [AllowAnonymous]
+        public ActionResult PhoneLogin()
+        {
+            return View();
+        }
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]

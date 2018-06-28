@@ -1,5 +1,6 @@
-﻿@using ShiFenMei.Models
-@model LoginViewModel
+﻿@{ 
+    Layout = null;
+}
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -26,12 +27,12 @@
                 <div class="login-form col-xs-10 col-xs-offset-1">
                     <div class="col-sm-8 col-sm-offset-2 items">
                         <div class="login-title item-title">
-                            <a href="register.html">
+                            <a href="Register">
                                 <span class="glyphicon glyphicon-triangle-left pull-left"></span>
                             </a>
 
                             <span class="">账号登录</span>
-                            <a href="phone-login.html">
+                            <a href="PhoneLogin">
                                 <span class="glyphicon glyphicon-triangle-right pull-right"></span>
                             </a>
                         </div>
@@ -42,7 +43,7 @@
                                         <img src="../images/login-01.png" alt="">
                                         <span class="line pull-right"></span>
                                     </div>
-                                    <input type="text" placeholder="账号">
+                                    <input id="txtPhone" type="text" placeholder="账号">
                                 </div>
                             </div>
                             <div class="login-password">
@@ -51,14 +52,14 @@
                                         <img src="../images/login-02.png" alt="">
                                         <span class="line pull-right"></span>
                                     </div>
-                                    <input type="password" placeholder="密码">
+                                    <input id="txtPassword" type="password" placeholder="密码">
                                 </div>
                             </div>
                             <div class="login-details">
 
                                 <div class="col-xs-4">
                                     <label>
-                                        <input type="checkbox" name="">
+                                        <input id="Remember_me" value="Remember_me" type="checkbox" name="">
                                         <a class="remember">
                                             记住密码
                                         </a>
@@ -66,12 +67,12 @@
 
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="register.html">
+                                    <a href="Register">
                                         注册账户
                                     </a>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="get-password.html" class="small-size">
+                                    <a href="GetPassword" class="small-size">
                                         找回密码
                                     </a>
                                 </div>
@@ -79,13 +80,12 @@
                             </div>
                             <div class="login-btn text-center">
                                 <div class="i-btn">
-                                    <a href="#" class="item-title">
+                                    <a id="aLogin" href="#" class="item-title">
                                         登录
                                     </a>
                                 </div>
-
                             </div>
-
+                            <div id="lbTip" style="color:green; text-align:center; margin-top:5px;">&nbsp;</div>
                         </form>
                     </div>
                 </div>
@@ -127,7 +127,9 @@
                 </div>
 
                 <div class="col-xs-4 col-xs-offset-4 text-center mt-20">
-                    <img class="img-qcode" src="../images/login-qcode.png  " alt="">
+                    <img class="img-qcode" src="@ViewBag.QRInfo["Url"]" alt="" width="200" height="200">
+                    <div id="img_footer" style="color:green; text-align:center; margin-top:5px;">&nbsp;</div>
+                    <input type="hidden" id="hidRndNum" value="@ViewBag.QRInfo["RndNum"]"/>
                 </div>
 
             </div>
@@ -211,6 +213,7 @@
     </section>
     <script src="../lib/jquery/jquery.min.js "></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../js/jquery.cookie.js "></script>
     <script src="../js/login.js"></script>
 </body>
 

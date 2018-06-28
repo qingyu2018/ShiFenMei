@@ -1,41 +1,226 @@
 ﻿@model ShiFenMei.Models.RegisterViewModel
 @{
+    Layout = null;
     ViewBag.Title = "注册";
 }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<h2>@ViewBag.Title。</h2>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>创建新帐户。</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="注册" />
-        </div>
-    </div>
-}
+    <title>注册账户</title>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+     <script src="../lib/bootstrap/html5shiv.min.js"></script>
+     <script src="../lib/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section class="login-main mobile-product">
+        <div class="container pc-container hidden-xs">
+
+            <div class="row">
+                <div class="login-form col-xs-10 col-xs-offset-1">
+                    <div class="col-sm-8 col-sm-offset-2 items">
+                        <div class="login-title item-title">
+                            <a href="GetPassword">
+                                <span class="glyphicon glyphicon-triangle-left pull-left"></span>
+                            </a>
+
+                            <span class="">注册账号</span>
+                            <a href="Login">
+                                <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                            </a>
+                        </div>
+                        <form action="">
+                            <div class="login-acount">
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="../images/login-01.png" alt="">
+                                        <span class="line pull-right"></span>
+                                    </div>
+                                    <input type="text" placeholder="账号">
+                                </div>
+                            </div>
+                            <div class="login-password">
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="../images/login-02.png" alt="">
+                                        <span class="line pull-right"></span>
+                                    </div>
+                                    <input type="password" placeholder="密码">
+                                </div>
+                            </div>
+                            <div class="register-phone">
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="../images/register-phone.png" alt="">
+                                        <span class="line pull-right"></span>
+
+                                    </div>
+                                    <input type="text" placeholder="手机号">
+                                </div>
+                            </div>
+                            <div class="login-details">
+                                <div class="col-xs-3">
+                                    <a href="get-password.html" class="small-size">
+                                        找回密码
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="login.html">
+                                        登录账户
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="login-btn text-center">
+                                <div class="i-btn">
+                                    <a href="#" class="item-title">
+                                        注册
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="common-title qcode-title col-sm-10 col-sm-offset-1 col-xs-12 items hidden-sm hidden-xs">
+                    <div class="col-xs-12 ">
+                        <div class="col-xs-5">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <p>二维码登录</p>
+                        </div>
+
+                        <div class="col-xs-5">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-title qcode-title col-sm-12  col-xs-12 items hidden-lg hidden-md hidden-xs">
+
+
+                    <div class="col-xs-12 ">
+                        <div class="col-xs-4">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <p>二维码登录</p>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-xs-4 col-xs-offset-4 text-center mt-20">
+                    <img class="img-qcode" src="../images/login-qcode.png  " alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="container mobile-product visible-xs">
+            <div class="items items-1 clearfix">
+                <a href="#" class="pull-left">
+                    <p>关闭</p>
+                </a>
+
+            </div>
+            <div class="items items-2">
+                <div class="icon-box">
+                    <div class="icon">
+                        <img src="../images/login-mobile-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="login-acount">
+                    <div class="content">
+                        <div class="img-box">
+                            <img src="../images/login-mobile-01.png" alt="">
+                        </div>
+
+                        <input type="text" placeholder="账号">
+                    </div>
+                </div>
+                <div class="login-password">
+                    <div class="content">
+                        <div class="img-box">
+                            <img src="../images/login-mobile-02.png" alt="">
+                        </div>
+                        <input type="password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="register-phone">
+                    <div class="content">
+                        <div class="img-box">
+                            <img src="../images/register-mobile-phone.png" alt="">
+                        </div>
+                        <input type="text" placeholder="手机号">
+                    </div>
+                </div>
+
+                <div class="login-btn text-center">
+                    <div class="i-btn items">
+                        <a href="#">
+                            <p>注册</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="find-password items">
+                    <a href="get-password.html">
+                        <p>找回密码</p>
+                    </a>
+                </div>
+            </form>
+            <div class="common-title qcode-title items">
+                <div class="col-xs-12 ">
+                    <div class="col-xs-4">
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xs-4 text-center qcode-box">
+                        <p>二维码登录</p>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-xs-offset-4 text-center mt-20">
+                <img class="img-qcode" src="../images/login-mobile-qcode.png  " alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../lib/jquery/jquery.min.js "></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../js/login.js"></script>
+
+
+</body>
+
+</html>
